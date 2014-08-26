@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN"
+        "http://tuckey.org/res/dtds/urlrewrite3.2.dtd">
+<urlrewrite>
+	<!--首页 -->
+	<rule>
+		<from>^/$</from>
+		<to>/index.html</to>
+	</rule>
+	<!--购彩大厅 -->
+	<rule>
+		<from>^/goucai/$</from>
+		<to>/goucai.html</to>
+	</rule>
+	<rule>
+		<from>^/goucai$</from>
+		<to>/seo-goucai.html</to>
+	</rule>
+	<!--开奖公告 -->
+	<rule>
+		<from>^/kaijiang/$</from>
+		<to>/kaijiang.html</to>
+	</rule>
+	<rule>
+		<from>^/kaijiang$</from>
+		<to>/seo-kaijiang.html</to>
+	</rule>
+	<!--计算器 -->
+	<rule>
+		<from>^/calculator/ssq/$</from>
+		<to>/calculator/ssq.html</to>
+	</rule>
+	<rule>
+		<from>^/calculator/dlt/$</from>
+		<to>/calculator/dlt.html</to>
+	</rule>
+	<!--帮助中心首页 -->
+	<rule>
+		<from>^/help/$</from>
+		<to>/help/index.html</to>
+	</rule>
+	<!-- ==================彩种页面================== -->
+	<!-- =====普通彩种页面===== -->
+	<!--ssq投注页面 -->
+	<rule>
+		<from>^/ssq/$</from>
+		<to>/ssq.html</to>
+	</rule>
+	<rule>
+		<from>^/ssq$</from>
+		<to>/seo-ssq.html</to>
+	</rule>
+	<!--dlt投注页面 -->
+	<rule>
+		<from>^/dlt/$</from>
+		<to>/dlt.html</to>
+	</rule>
+	<rule>
+		<from>^/dlt$</from>
+		<to>/seo-dlt.html</to>
+	</rule>
+	<!--qxc投注页面 -->
+	<rule>
+		<from>^/qxc/$</from>
+		<to>/qxc.html</to>
+	</rule>
+	<rule>
+		<from>^/qxc$</from>
+		<to>/seo-qxc.html</to>
+	</rule>
+	<!--qlc投注页面 -->
+	<rule>
+		<from>^/qlc/$</from>
+		<to>/qlc.html</to>
+	</rule>
+	<rule>
+		<from>^/qlc$</from>
+		<to>/seo-qlc.html</to>
+	</rule>
+	<!-- =====高频彩页面===== -->
+	<!--广西快三投注页面 -->
+	<rule>
+		<from>^/k3gx/$</from>
+		<to>/k3gx.html</to>
+	</rule>
+	<rule>
+		<from>^/k3gx$</from>
+		<to>/seo-k3gx.html</to>
+	</rule>
+	<!--吉林快三投注页面 -->
+	<rule>
+		<from>^/k3jl/$</from>
+		<to>/k3jl.html</to>
+	</rule>
+	<rule>
+		<from>^/k3jl$</from>
+		<to>/seo-k3jl.html</to>
+	</rule>
+	<!--江苏快三投注页面 -->
+	<rule>
+		<from>^/k3js/$</from>
+		<to>/k3js.html</to>
+	</rule>
+	<rule>
+		<from>^/k3js$</from>
+		<to>/seo-k3js.html</to>
+	</rule>
+	<!-- =====传统体彩页面===== -->
+	<!--胜负彩投注页面 -->
+	<rule>
+		<from>^/f14/$</from>
+		<to>/f14.html</to>
+	</rule>
+	<rule>
+		<from>^/f14$</from>
+		<to>/seo-f14.html</to>
+	</rule>
+	<!--任选9投注页面 -->
+	<rule>
+		<from>^/f9/$</from>
+		<to>/f9.html</to>
+	</rule>
+	<rule>
+		<from>^/f9$</from>
+		<to>/seo-f9.html</to>
+	</rule>
+</urlrewrite>

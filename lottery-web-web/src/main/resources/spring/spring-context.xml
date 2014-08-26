@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		   http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<!-- enable autowire -->
+	<context:annotation-config />
+	<!-- for aop annotation 暴漏自身代理 -->
+	<context:component-scan base-package="com.sogou" />
+	<aop:aspectj-autoproxy expose-proxy="true" />
+	<context:property-placeholder location="**/*.properties" />
+
+	<bean id="versionBean" class="com.sogou.lottery.web.service.init.VersionBean">
+		<property name="versionId" value="${version.versionId}"></property>
+	</bean>
+
+	<bean id="environmentBean" class="com.sogou.lottery.web.service.init.EnvironmentBean">
+		<property name="domainUrlString" value="${domain}"></property>
+		<property name="cdnUrlString" value="${cdn}"></property>
+		<property name="env" value="${env}"></property>
+	</bean>
+
+    <bean id="startupBeanPostProcessor" class="com.sogou.lottery.base.startup.StartupBeanPostProcessor" />
+    <bean id="systemConfigs" class="com.sogou.lottery.base.constant.SystemConfigs" >
+		<property name="category" value="${systemConfig.category}"></property>
+	</bean>
+
+	<bean id="SpringContextUtil" class="com.sogou.lottery.util.SpringContextUtil" />
+</beans>

@@ -1,0 +1,169 @@
+.ball-list .ball li em,
+.qxc-item .l li em,
+.k3-3bt-ball-list .bet-toggle li em,
+.kj-num i,
+.k3-stat-info li i,
+.order-stat dd em,
+.t-sel i,
+.tool-ball-area .ball-sel li{
+    background-image: url(../img/ball.png?v=20140325);
+    background-repeat: no-repeat;
+}
+
+.ball-list .f .btn,
+.ball-item .aside li a,
+.ball-list .ball li .allbtn,
+.qxc-item .r li span,
+.k3-3thtx-ball-list .ball li em,
+.k3-3thdx-ball-list .ball li em,
+.k3-3bt-ball-list .bet-toggle .r li span,
+.menu,
+.cp-type,
+.cp-type b,
+.menu ul.dh li a,
+.cp-infos .sfc-bg,
+.jctop .selmatch,
+.jc-operate .opbtn,
+.jc-operate .dobtn a,
+.jc-operate .bei,
+.cp-area .sel-ret a:hover,
+.cp-area th .darr,
+.cp-area td.sel-ret,
+.cp-area a.sel-hover,
+.jcarea .spf_do a,
+.jcarea .spf_do a:hover,
+.jcarea .spf_do a.cur,
+.jcarea a.open,
+.jcarea a.opencur,
+.jcarea td.dosel a,
+.ls-fen-tbl th,
+.u-page .page-btn,
+.order-detail,
+.jc-detail,
+.fbtn,
+.hbtn,
+.home-tou-btn,
+.modal .title,
+.t-right .funtab,
+.cpinfo-nav .intro .buybtn,
+.tool_award .info,
+.tool_award .total,
+.jc-operate .s1 .b em {
+    background-image: url(../img/repeat-x.png?v=20140327);
+    background-repeat: repeat-x;
+}
+.home-ico{
+	background-image: url(../img/home-ico.png?v=20140327);
+    background-repeat: no-repeat;
+}
+.footer-logo{
+	background-image: url(../img/footer-logo.png?v=20140327);
+    background-repeat: no-repeat;
+}
+.vimg{
+	background-image: url(../img/vimg.png?v=20140327);
+    background-repeat: no-repeat;
+}
+.ball-list .sel-ball .btn,
+.ball-submit .btn,
+.ddjx-btn a,
+.jjc-sel-ball .btn {
+    background-image: url(../img/button.png?v=20140325);
+    background-repeat: no-repeat;
+}
+
+.ball-pay-method .tips i,
+.ball-count i,
+.header .kefu i,
+.fc-faq strong,
+.fc-faq p i,
+.k3-kj-nav h2 i,
+.u-menu ul a.cur,
+.order-stat dd i,.mynum-tbl i,
+.tic-detail .info i,
+.ico-back,
+.ico-blank,
+.qqconnect,
+.footer i.about,
+.u_footer i.about,
+.t-left a em,
+.annoc .g-kj-ret i.ico,
+.arrud,
+.jc-operate .nav .tit .arr {
+    background-image: url(../img/ico.png?v=20140325);
+    background-repeat: no-repeat;
+}
+.modal{
+	background-image:url(../img/layer_bg.png?v=20140325);
+	background-repeat:repeat;
+}
+.header .logo{
+	background-image: url(../img/logo.png?v=20140325);
+	background-repeat: no-repeat;
+}
+.header .banner{
+    background-image: url(../img/pic/banner2.png?v=20140325);
+    background-repeat: no-repeat;
+}
+.u_cover{
+	background-image:url(../img/log-cov.png?v=20140325);
+	background-repeat:no-repeat;
+}
+.cp-type li a,
+.cp-list li a{
+	background-image:url(../img/cp-ico.png?v=20140325);
+	background-repeat:no-repeat;
+}
+.bank-ico{
+	background-image:url(../img/bank.png?v=20140325);
+	background-repeat:no-repeat;
+}
+.pwd-ico,
+.gccn-nav li i{
+	background-image:url(../img/pwd-ico.png?v=20140325);
+	background-repeat:no-repeat;
+}
+.sys-err{
+	background-image:url(../img/sys-err.png?v=20140325);
+	background-repeat:no-repeat;
+}
+.tip-ico i,
+.modal .fast-reg .f-n i{
+	background-image:url(../img/tip-ico.png?v=20140325);
+	background-repeat:no-repeat;
+}
+
+.cp-infos .info2 .sfc-logo,.cp-infos .info2 .f14-logo,.cp-infos .info2 .f9-logo{
+	background-image:url(../img/sfc-logo.png?v=20140325);
+	background-repeat:no-repeat;
+}
+.k3-kj-info div i,
+.k3ball i{
+	background-image:url(../img/dice.png?v=20140325);
+	background-repeat:no-repeat;
+}
+.cp-infos .info2 .ilogo{
+	background-image:url(../img/ilogo.gif?v=20140325);
+	background-repeat:no-repeat;
+}
+.ssq-intro table span{
+	background-image:url(../img/ssq-ico.png?v=20140325);
+	background-repeat:no-repeat;
+}
+
+.logos{
+	background-image:url(../img/logos.gif?v=20140325);
+	background-repeat:no-repeat;
+}
+.k3ball .loading{
+	background:url(../img/loading.gif?v=20140325);
+}
+.hr-nav1 .login .loading{
+    background:url(../img/loading.gif?v=20140325) center no-repeat;
+}
+
+.help_menu i,
+.i_help{
+	background-image:url(../img/help.gif?v=20140323);
+	background-repeat: no-repeat; 
+}

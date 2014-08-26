@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		   http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id="dataSource" class="org.logicalcobwebs.proxool.ExtendsProxoolDataSource">
+		<property name="alias" value="project"></property>
+		<property name="delegateProperties">
+			<value>user=${jdbc_lottery.username},password=${jdbc_lottery.password}
+			</value>
+		</property>
+		<property name="user" value="${jdbc_lottery.username}" />
+		<property name="password" value="${jdbc_lottery.password}" />
+		<property name="driver" value="${jdbc_lottery.driverClassName}" />
+		<property name="driverUrl" value="${jdbc_lottery.url}" />
+		<property name="maximumConnectionCount" value="${jdbc_lottery.maximumConnectionCount}"></property>
+		<property name="maximumActiveTime" value="${jdbc_lottery.maximumActiveTime}"></property>
+		<property name="maximumConnectionLifetime" value="${jdbc_lottery.maximumConnectionLifetime}"></property>
+		<property name="prototypeCount" value="${jdbc_lottery.prototypeCount}"></property>
+		<property name="houseKeepingSleepTime" value="${jdbc_lottery.houseKeepingSleepTime}"></property>
+		<property name="simultaneousBuildThrottle" value="${jdbc_lottery.simultaneousBuildThrottle}"></property>
+		<property name="houseKeepingTestSql" value="${jdbc_lottery.houseKeepingTestSql}"></property>
+		<property name="verbose" value="${jdbc_lottery.verbose}"></property>
+		<property name="statistics" value="${jdbc_lottery.statistics}"></property>
+		<property name="statisticsLogLevel" value="${jdbc_lottery.statisticsLogLevel}"></property>
+	</bean>
+
+	<bean id="pageConfig" class="com.sogou.lottery.dao.pagination.PaginationInterceptor">
+		<property name="properties">
+			<props>
+				<prop key="dbms">oracle</prop>
+			</props>
+		</property>
+	</bean>
+
+	<!--mybatis与Spring整合 -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="mapperLocations" value="classpath*:mappers/*.xml" />
+		<property name="configLocation" value="classpath:mybatis.xml" />
+		<property name="typeAliasesPackage" value="com.sogou.lottery.base.vo" />
+		<property name="plugins">
+			<list>
+				<ref bean="pageConfig" />
+			</list>
+		</property>
+	</bean>
+	<!-- scan for mappers and let them be autowired -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.sogou.lottery.**.dao" />
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+	</bean>
+
+	<tx:annotation-driven transaction-manager="transactionManager" />
+
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+		<qualifier value="main" />
+	</bean>
+</beans>

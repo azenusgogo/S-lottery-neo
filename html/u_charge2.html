@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="src/css/main.css"/>
+</head>
+<body>
+<div class="topbar">
+    <div class="wrapper">
+        <ul class="toplinks">
+            <li><a href="#">首页</a></li> |
+            <li><a href="#">购彩大厅</a></li> |
+            <li><a href="#">意见反馈</a></li> |
+            <li><a href="#">收藏本站</a></li> |
+            <li><a href="#">设为首页</a></li> |
+            <li><a href="#">保存到桌面</a></li>
+        </ul>
+        <div class="top_ulink">
+            欢迎您，<span>guest</span>
+            <a href="#">购彩记录</a>
+            <a href="#">账户明细</a>
+            <a href="#">充值</a>
+            <a href="#">提款</a>
+            <a href="#">修改密码</a>
+            <a href="#">退出登录</a>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="wrapper cf">
+        <a href="#" class="logo ct">搜狗彩票</a>
+        <div class="kefu">
+            <p class="ol-kf"><a href="#"><i></i>在线客服</a></p>
+            <p>客服电话<span>010-8829 8888</span></p>
+        </div>
+    </div>
+</div>
+<div class="menu">
+    <div class="wrapper">
+        <div class="cp-type">
+            <b>选择彩票</b>
+            <ul>
+                <li><a href="#">双色球</a><span>2元能中1000万</span></li>
+                <li class="dlt"><a href="#">大乐透</a><span>3元可中1600万</span></li>
+                <li class="k3"><a href="#">新快3</a><span>骰子游戏好玩易中</span></li>
+                <li class="x5"><a href="#">11选5</a><span>猜中一个号有奖</span></li>
+                <li class="qxc"><a href="#">七星彩</a><span>特别容易中奖</span></li>
+                <li class="qlc"><a href="#">七乐彩</a><span>特别容易中奖</span></li>
+                <li class="sfc"><a href="#">胜平负</a><span>特别容易中奖</span></li>
+                <li class="x9"><a href="#">任选9</a><span>特别容易中奖</span></li>
+            </ul>
+        </div>
+        <ul class="dh">
+            <li><a href="#" class="cur">首页</a></li>
+            <li><a href="#">购彩大厅</a></li>
+            <li><a href="#">开奖公告</a></li>
+            <li><a href="#">购彩工具</a></li>
+            <li><a href="#" class="nobg">帮助中心</a></li>
+        </ul>
+    </div>
+</div>
+<div class="wrapper cf ucenter">
+    <div class="u-menu">
+        <div class="u-info">
+            您好，哈米<br />账户余额：<b>566</b>元
+            <div class="u-charge">
+                <a href="#" class="fbtn min-red">充值</a>
+                <a href="#" class="fbtn min-white">提现</a>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">资金明细</a></li>
+            <li><a href="#">身份信息</a></li>
+            <li><a href="#" class="cur">充值</a></li>
+            <li><a href="#">提款</a></li>
+            <li><a href="#">修改密码</a></li>
+        </ul>
+    </div>
+    <div class="u-cont">
+        <h3><b>充值中心</b></h3>
+        <form action="/login/charge/charge.html" method="post" target="_blank" id="user_recharge2">
+            <input type="hidden" value="12" id="id"/>
+    		<div class="u-chong-box">
+    			<div class="charge-confirm">
+                	<span>请确认充值信息</span>
+                	<div class="charge-info">
+                		<p><b>账 户 名：</b>hami</p>
+                		<p><b>充值金额：</b><em>100</em>元</p>
+                		<p class="sel-bank"><b>支付银行：</b><i class="bank-ico b-zfye"></i> <a href="#"><i class="ico-back"></i>返回重新选择银行</a></p>
+                	</div>
+                </div>
+    			<div class="u-btm-btn">
+    				<a class="fbtn submit" href="#">立即充值</a>
+    				<p class="tips"><i class="ico-blank"></i> 将会在新窗口中打开网上银行<br /><span>提示：充值成功后，请勿立即关闭窗口</span></p>
+    			</div>
+    		</div>
+            <div class="btm-tips">
+                <p><i></i>注意事项：<br />
+                1.请确保您的银行卡已经开通网上银行服务，否则无法使用付款功能。<br />
+                2.付款后，如因银行数据传输故障或网络信号延迟，造成资金未能及时到账，请联系在线客服！</p>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="dialog" id="charge_complete">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close dialog-close">&times;</i>提示</div>
+        <div class="modbox">
+            <div class="tip-ico" style="margin:15px 0 0 20px">
+                <i class="tip-warn"></i>
+                <p class="warn-cont">
+                    <b>请在新打开的网上银行<br />页面上完成充值</b><br />
+                    <span class="dia-gray">充值完成前请不要关闭此窗口。<br />
+                    完成充值后请根据您的情况点击下面的按钮</span>
+                </p>
+            </div>
+            <div class="modbtn">
+                <a class="fbtn" href="/login/charge/done.html?id=11&payOrderId=123">已完成充值</a>&nbsp;&nbsp;
+                <a class="fbtn btn-white" href="/help/f-recharge.html">充值遇到问题</a>
+                <p class="backstep"><a href=""><i class="ico-back"></i>返回重新选择银行</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="login_body"></div>
+<script src="http://account.sogou.com/static/api/passport.js"></script>
+<script src="src/js/base.js" data-main="src/js/main"></script>
+</body>
+</html>

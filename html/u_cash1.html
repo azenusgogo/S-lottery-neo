@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="src/css/main.css"/>
+</head>
+<body>
+<div class="topbar">
+    <div class="wrapper">
+        <ul class="toplinks">
+            <li><a href="#">首页</a></li> |
+            <li><a href="#">购彩大厅</a></li> |
+            <li><a href="#">意见反馈</a></li> |
+            <li><a href="#">收藏本站</a></li> |
+            <li><a href="#">设为首页</a></li> |
+            <li><a href="#">保存到桌面</a></li>
+        </ul>
+        <div class="top_ulink">
+            欢迎您，<span>guest</span>
+            <a href="#">购彩记录</a>
+            <a href="#">账户明细</a>
+            <a href="#">充值</a>
+            <a href="#">提款</a>
+            <a href="#">修改密码</a>
+            <a href="#">退出登录</a>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="wrapper cf">
+        <a href="#" class="logo ct">搜狗彩票</a>
+        <div class="kefu">
+            <p class="ol-kf"><a href="#"><i></i>在线客服</a></p>
+            <p>客服电话<span>010-8829 8888</span></p>
+        </div>
+    </div>
+</div>
+<div class="menu">
+    <div class="wrapper">
+        <div class="cp-type">
+            <b>选择彩票</b>
+            <ul>
+                <li><a href="#">双色球</a><span>2元能中1000万</span></li>
+                <li class="dlt"><a href="#">大乐透</a><span>3元可中1600万</span></li>
+                <li class="k3"><a href="#">新快3</a><span>骰子游戏好玩易中</span></li>
+                <li class="x5"><a href="#">11选5</a><span>猜中一个号有奖</span></li>
+                <li class="qxc"><a href="#">七星彩</a><span>特别容易中奖</span></li>
+                <li class="qlc"><a href="#">七乐彩</a><span>特别容易中奖</span></li>
+                <li class="sfc"><a href="#">胜平负</a><span>特别容易中奖</span></li>
+                <li class="x9"><a href="#">任选9</a><span>特别容易中奖</span></li>
+            </ul>
+        </div>
+        <ul class="dh">
+            <li><a href="#" class="cur">首页</a></li>
+            <li><a href="#">购彩大厅</a></li>
+            <li><a href="#">开奖公告</a></li>
+            <li><a href="#">购彩工具</a></li>
+            <li><a href="#" class="nobg">帮助中心</a></li>
+        </ul>
+    </div>
+</div>
+<div class="wrapper cf ucenter">
+    <div class="u-menu">
+        <div class="u-info">
+            您好，哈米<br />账户余额：<b>566</b>元
+            <div class="u-charge">
+                <a href="#" class="fbtn min-red">充值</a>
+                <a href="#" class="fbtn min-white">提现</a>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">资金明细</a></li>
+            <li><a href="#">身份信息</a></li>
+            <li><a href="#">充值</a></li>
+            <li><a href="#" class="cur">提款</a></li>
+            <li><a href="#">修改密码</a></li>
+        </ul>
+    </div>
+    <div class="u-cont">
+	    <div class="u-tab cf">
+			<a href="#" class="cur">提款申请</a>
+			<a href="#">提款记录</a>
+	    </div>
+	    <div class="u-cash" id="my_cash">
+	    	<div class="fipt" style="height:40px">
+				<label class="f-h">当前现金账户可用余额：</label>
+				<div class="f-n">&yen;<em>9999999.99</em>元</div>
+			</div>
+			<div class="fipt">
+				<label class="f-h">银行卡：</label>
+				<div class="f-n bank-card">
+					<ul class="card-box bdr">
+						<li><b>&#43;</b> <a href="#" class="change_card">添加银行卡</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="fipt">
+				<label class="f-h">提款金额：</label>
+				<div class="f-n"><input type="text" class="txt bdr money" />&nbsp;&nbsp;<b>元</b><br />
+				<span>最小提现金额为1元，每天只能提款<em>3</em>次，每笔手续费<em>1</em>元</span></div>
+			</div>
+			<div class="fipt">
+				<label class="f-h">支付密码：</label>
+				<div class="f-n"><input type="password" class="txt bdr pwd" />&nbsp;&nbsp;<a href="#">忘记密码？</a><br />
+				<span>此为您在搜狗彩票的支付密码，与银行卡无关</span></div>
+			</div>
+			<div class="fipt">
+				<label class="f-h">验证码：</label>
+				<div class="f-n"><input type="text" class="txt s1 bdr code" /> <img id="codePic" class="add-on" src="/src/img/validcode.png">&nbsp;&nbsp;<a href="#" onclick="var _this = document.getElementById('codePic');_this.src = _this.src.split('?')[0]+'?t='+ +new Date();return false">换一张</a><br />
+				<span>此为您在搜狗彩票的支付密码，与银行卡无关</span></div>
+			</div>
+			<div class="u-btm-btn">
+				<a class="fbtn submit" href="#">申请提款</a>
+			</div>
+	    </div>
+		<div class="btm-tips">
+			<p><i></i>提款注意事项：<br />
+			<em>为了防止恶意提款、洗钱等不大行为，每笔存入资金的20%须用于实际消费，否则提款受限，请按实际购买额充值；</em><br />
+			为了防止极个别用户进行信用卡套现、洗钱、网络钓鱼等违法行为，本站针对异常提款进行严格审核，正常现金提款不受影响。<br />
+			为了保障您的资金安全，您的提款申请将通过系统审核处理再汇到您的账户，请1-3个工作日后查询银行帐户；
+			查询提款是否到账以银行账户实际到账为准，手机短信只是代表您的提款申请我们已经受理；<br />
+			<a href="#">更多关于提款的问题</a>
+		</p>
+		</div>
+    </div>
+</div>
+<div class="dialog" id="change_card1">
+    <div class="modal">
+        <div class="modcon">
+            <div class="title"><i title="关闭" class="close dialog-close">&times;</i>添加银行卡</div>
+            <div class="modbox">
+                <p class="ptxt"><b>提款绑定的银行卡开户行必须与您之前注册的实名一致，<br>否则无法提款。请确认信息无误后再提交！</b></p>
+                <div class="dia-bank-ipt">
+                    <div class="fipt">
+                        <label class="f-h">银行开户人姓名：</label>
+                        <div class="f-n"><b>哈*</b></div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h">提款银行：</label>
+                        <div class="f-n">
+                        <select class="bank">
+                            <option value="0">请选择银行</option>
+                            <option value="1">中国工商银行</option>
+                            <option value="2">中国建设银行</option>
+                        </select>
+                        <br>
+                        <em class="valid"></em>
+                        </div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h">银行卡卡号：</label>
+                        <div class="f-n">
+                            <input type="text" class="txt bdr bank_n" />
+                            <span class="dia-red valid"></span>
+                            <br /><span class="dia-gray">仅支持提款身份认证为<b>哈*</b>的银行借记卡</span>
+                            <div class="bankcard-tip">
+                                <span>6225 8888 8888 8888 028</span>
+                                <sup class="ct"></sup>
+                                <sub class="ct"></sub>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reqtip">
+                <b>提款手续费及到账时间</b>
+                <p class="modpli"><i></i>本站目前支持提款至<em>15</em>家银行，每笔提款金额最少为<em>1</em>元。</p>
+                <p class="modpli"><i></i>提款手续费由银行收取，搜狗彩票为您提供补贴，您每笔仅需向银行支付<em>1</em>元钱手续费。</p>
+                <p class="modpli"><i></i>搜狗彩票会第一时间为您办理您的提款申请。</p>
+                <p class="modpli"><i></i>您的提款将在三个工作日左右到账，具体到账时间由银行决定。</p>
+            </div>
+            <div class="modbtn">
+                <a class="fbtn bind" href="#">确认绑定</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="change_card2">
+    <div class="modal">
+        <div class="modcon">
+            <div class="title"><i title="关闭" class="close dialog-close">&times;</i>温馨提示</div>
+            <div class="modbox">
+                <p class="ptxt"><b>提款绑定的银行卡开户行必须与您之前注册的实名一致，<br />否则无法提款。请确认信息无误后再提交！</b></p>
+                <div class="dia-bank-ipt">
+                    <div class="fipt">
+                        <label class="f-h">银行开户人姓名：</label>
+                        <div class="f-n"><b>哈米</b></div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h">提款银行：</label>
+                        <div class="f-n"><b class="bank_name"></b></div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h">银行卡号：</label>
+                        <div class="f-n"><b class="bank_n"></b></div>
+                    </div>
+                    <div class="modbtn">
+                        <a class="fbtn submit" href="#">确认提交</a>&nbsp;&nbsp;
+                        <a class="fbtn btn-white back" href="#">返回修改</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="src/js/base.js" data-main="src/js/main"></script>
+</body>
+</html>

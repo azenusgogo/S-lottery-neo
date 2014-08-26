@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="src/css/main.css"/>
+</head>
+<body>
+<div class="topbar">
+    <div class="wrapper">
+        <ul class="toplinks">
+            <li><a href="#">首页</a></li> |
+            <li><a href="#">购彩大厅</a></li> |
+            <li><a href="#">意见反馈</a></li> |
+            <li><a href="#">收藏本站</a></li> |
+            <li><a href="#">设为首页</a></li> |
+            <li><a href="#">保存到桌面</a></li>
+        </ul>
+        <div class="top_ulink">
+            欢迎您，<span>guest</span>
+            <a href="#">购彩记录</a>
+            <a href="#">账户明细</a>
+            <a href="#">充值</a>
+            <a href="#">提款</a>
+            <a href="#">修改密码</a>
+            <a href="#">退出登录</a>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="wrapper cf">
+        <a href="#" class="logo ct">搜狗彩票</a>
+        <div class="kefu">
+            <p class="ol-kf"><a href="#"><i></i>在线客服</a></p>
+            <p>客服电话<span>010-8829 8888</span></p>
+        </div>
+    </div>
+</div>
+<div class="menu">
+    <div class="wrapper">
+        <div class="cp-type">
+            <b>选择彩票</b>
+            <ul>
+                <li><a href="#">双色球</a><span>2元能中1000万</span></li>
+                <li class="dlt"><a href="#">大乐透</a><span>3元可中1600万</span></li>
+                <li class="k3"><a href="#">新快3</a><span>骰子游戏好玩易中</span></li>
+                <li class="x5"><a href="#">11选5</a><span>猜中一个号有奖</span></li>
+                <li class="qxc"><a href="#">七星彩</a><span>特别容易中奖</span></li>
+                <li class="qlc"><a href="#">七乐彩</a><span>特别容易中奖</span></li>
+                <li class="sfc"><a href="#">胜平负</a><span>特别容易中奖</span></li>
+                <li class="x9"><a href="#">任选9</a><span>特别容易中奖</span></li>
+            </ul>
+        </div>
+        <ul class="dh">
+            <li><a href="#" class="cur">首页</a></li>
+            <li><a href="#">购彩大厅</a></li>
+            <li><a href="#">开奖公告</a></li>
+            <li><a href="#">购彩工具</a></li>
+            <li><a href="#" class="nobg">帮助中心</a></li>
+        </ul>
+    </div>
+</div>
+<div class="wrapper cf ucenter">
+    <div class="u-menu">
+        <div class="u-info">
+            您好，哈米<br />账户余额：<b>566</b>元
+            <div class="u-charge">
+                <a href="#" class="fbtn min-red">充值</a>
+                <a href="#" class="fbtn min-white">提现</a>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">资金明细</a></li>
+            <li><a href="#">身份信息</a></li>
+            <li><a href="#" class="cur">充值</a></li>
+            <li><a href="#">提款</a></li>
+            <li><a href="#">修改密码</a></li>
+        </ul>
+    </div>
+    <form action="/login/charge/confirm.html" method="post" id="user_recharge">
+        <input type="hidden" value="901" name="bankId">
+        <input type="hidden" value="20000" name="amount">
+        <input type="hidden" value="20000" name="payOrderId">
+        <div class="u-cont">
+            <h3><b>充值中心</b></h3>
+    		<div class="u-chong-box">
+    			<div class="fipt">
+    				<label class="f-h">充值金额：</label>
+    				<div class="f-n"><input type="text" class="txt money" /> 元<br /><span class="tips">即时到账，搜狗彩票充值免收手续费，最小充值<em id="min_amount">1</em>元</span></div>
+    			</div>
+    			<ul class="u-bank-list cf" style="height:120px;">
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-gsyh">工商银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-jsyh">建设银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-nyyh">中国农业银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-zsyh">招商银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-zgyh">中国银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-jtyh">交通银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-yzcx">邮政储蓄银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-gdyh">光大银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-pfyh">浦发银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-gfyh">广发银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-bjyh">北京银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-msyh">民生银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-zxyh">中信银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-szfz">深发展银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-xyyh">兴业银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-hxyh">华夏银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-payh">平安银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-nbyh">宁波银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-njyh">南京银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-ncsy">北京农村商业银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-bhyh">渤海银行</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-dyyh">东亚银行</span>
+                        </label>
+                    </li>
+    			</ul>
+                <div class="cf morebank">
+                    没有找到您需要的银行？
+                    <a href="#" class="show_bank">点击显示全部银行</a>
+                </div>
+    			<ul class="u-bank-list cf">
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-zfye">支付宝余额</span>
+                        </label>
+                    </li>
+    				<li>
+                        <label>
+                            <input type="radio" name="bankId" value="id_1" />
+                            <span class="ct bank-ico b-zfkt">支付宝卡通</span>
+                        </label>
+                    </li>
+    			</ul>
+    			<div class="u-btm-btn">
+    				<a class="fbtn submit" href="#">去充值</a>
+    			</div>
+    		</div>
+            <div class="btm-tips">
+                <p><i></i>注意事项：<br />
+                1.请确保您的银行卡已经开通网上银行服务，否则无法使用付款功能。<br />
+                2.付款后，如因银行数据传输故障或网络信号延迟，造成资金未能及时到账，请联系在线客服！</p>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="http://account.sogou.com/static/api/passport.js"></script>
+<script src="src/js/base.js" data-main="src/js/main"></script>
+</body>
+</html>

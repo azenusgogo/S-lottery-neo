@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="src/css/main.css"/>
+</head>
+<body>
+<div class="dialog d1" style="position:fixed;_position:absolute;width:420px;margin-left:-210px;left:50%;top:20%;z-index:1001">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close">&times;</i>提示</div>
+        <div class="modbox">
+            <div class="tip-ico">
+                <i class="tip-warn"></i>
+                <b>腾讯QQ用户认证获取失败，请重新尝试！</b><br />
+                <a href="">用腾讯QQ账号登录</a>
+            </div>
+            <div class="modbtn"><a class="fbtn long" href="#">确定</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d2" style="position:fixed;_position:absolute;width:470px;margin-left:-230px;left:50%;top:100px">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close">&times;</i>修改手机号码</div>
+        <div class="modbox">
+           <p class="mod-tips">修改绑定时，请先验证已绑定手机号，若当前手机号遗失/不用，或无法收到验证码，请联系客服中心：400-636-1818</p>
+           <div class="u-re-tel">
+               <div class="fipt">
+                   <label class="f-h">您的手机号码：</label>
+                   <div class="f-n">186****6666 <a href="" class="fbtn min-white">获取验证码</a></div>
+               </div>
+               <div class="fipt">
+                   <label class="f-h">请输入验证码：</label>
+                   <div class="f-n"><input type="text" class="txt" /><br />
+                   <em class="valid">验证码不能为空，请填写</em></div>
+               </div>
+               <div class="fipt">
+                   <label class="f-h">请输入支付密码：</label>
+                   <div class="f-n"><input type="text" class="txt" /><br />
+                   <em class="valid">支付密码不能为空，请填写</em></div>
+               </div>
+           </div>
+           <div class="modbtn"><a class="fbtn" href="#">下一步</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d3" style="position:fixed;_position:absolute;width:460px;margin-left:-230px;left:50%;top:100px">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close">&times;</i>修改手机号码</div>
+        <div class="modbox">
+           <p class="mod-tips">修改绑定时，请先验证已绑定手机号，若当前手机号遗失/不用，或无法收到验证码，请联系客服中心：400-636-1818</p>
+           <div class="u-re-tel">
+               <div class="fipt">
+                   <label class="f-h">您的手机号码：</label>
+                   <div class="f-n">186****6666 <a href="" class="fbtn min-white disabled">120 秒后重发</a> <span class="dia-green f12">发送成功</span></div>
+               </div>
+               <div class="fipt">
+                   <label class="f-h">请输入验证码：</label>
+                   <div class="f-n"><input type="text" class="txt" /></div>
+               </div>
+               <div class="fipt">
+                   <label class="f-h">请输入支付密码：</label>
+                   <div class="f-n"><input type="text" class="txt" /></div>
+               </div>
+           </div>
+           <div class="modbtn"><a class="fbtn" href="#">下一步</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d4" style="position:fixed;_position:absolute;width:460px;margin-left:-230px;left:50%;top:100px">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close">&times;</i>修改手机号码</div>
+        <div class="modbox">
+           <p class="mod-tips">修改绑定时，请先验证已绑定手机号，若当前手机号遗失/不用，或无法收到验证码，请联系客服中心：400-636-1818</p>
+           <div class="u-re-tel">
+               <div class="fipt">
+                   <label class="f-h">您的手机号码：</label>
+                   <div class="f-n"><input type="text" class="txt" /> <a href="" class="fbtn min-white">获取验证码</a>  <span class="dia-green f12">发送成功</span></div>
+               </div>
+               <div class="fipt">
+                   <label class="f-h">请输入验证码：</label>
+                   <div class="f-n"><input type="text" class="txt" /></div>
+               </div>
+               <div class="fipt">
+                   <label class="f-h">请输入支付密码：</label>
+                   <div class="f-n"><input type="text" class="txt" /></div>
+               </div>
+           </div>
+           <div class="modbtn"><a class="fbtn" href="#">确认修改</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d5" style="position:fixed;_position:absolute;width:360px;margin-left:-180px;left:50%;top:100px">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close">&times;</i>修改手机号码</div>
+        <div class="modbox">
+           <p class="txt-center">
+               请先输入您想要新绑定的手机号码！
+           </p>
+           <div class="modbtn"><a class="fbtn long" href="#">确 定</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d6" style="position:fixed;_position:absolute;width:420px;margin-left:-210px;left:50%;top:20%;z-index:1001">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close">&times;</i>提示</div>
+        <div class="modbox">
+            <div class="tip-ico" style="margin:15px 0 0 20px">
+                <i class="tip-warn"></i>
+                <p class="warn-cont">
+                    <b>请在新打开的网上银行<br />页面上完成充值</b><br />
+                    <span class="dia-gray">充值完成前请不要关闭此窗口。<br />
+                    完成充值后请根据您的情况点击下面的按钮</span>
+                </p>
+            </div>
+            <div class="modbtn">
+                <a class="fbtn" href="#">已完成充值</a>&nbsp;&nbsp;
+                <a class="fbtn btn-white" href="#">充值遇到问题</a>
+                <p class="backstep"><a href=""><i class="ico-back"></i>返回重新选择银行</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d7" style="position:fixed;_position:absolute;width:450px;margin-left:-225px;left:50%;top:20%;z-index:1001">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close">&times;</i>温馨提示</div>
+        <div class="modbox">
+            <p class="ptxt"><b>提款绑定的银行卡开户行必须与您之前注册的实名一致，<br />否则无法提款。请确认信息无误后再提交！</b></p>
+            <div class="dia-bank-ipt">
+                <div class="fipt">
+                    <label class="f-h">银行开户人姓名：</label>
+                    <div class="f-n"><b>哈米</b></div>
+                </div>
+                <div class="fipt">
+                    <label class="f-h">提款银行：</label>
+                    <div class="f-n"><b>招商银行</b></div>
+                </div>
+                <div class="fipt">
+                    <label class="f-h">银行卡号：</label>
+                    <div class="f-n"><b>6225 8888 8888 0048</b></div>
+                </div>
+                <div class="modbtn">
+                    <a class="fbtn" href="#">确认提交</a>&nbsp;&nbsp;
+                    <a class="fbtn btn-white" href="#">返回修改</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d8" style="position:fixed;_position:absolute;width:560px;margin-left:-280px;left:50%;top:10%;z-index:1001">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close">&times;</i>添加银行卡</div>
+        <div class="modbox">
+            <p class="ptxt"><b>提款绑定的银行卡开户行必须与您之前注册的实名一致，<br>否则无法提款。请确认信息无误后再提交！</b></p>
+            <div class="dia-bank-ipt">
+                <div class="fipt">
+                    <label class="f-h">银行开户人姓名：</label>
+                    <div class="f-n"><b>哈*</b></div>
+                </div>
+                <div class="fipt">
+                    <label class="f-h">提款银行：</label>
+                    <div class="f-n">
+                    <select>
+                        <option>请选择银行</option>
+                        <option>中国工商银行</option>
+                        <option>中国建设银行</option>
+                        <option>中国农业银行</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="fipt">
+                    <label class="f-h">银行卡卡号：</label>
+                    <div class="f-n" style="position:relative">
+                        <input type="text" class="txt bdr bankcard" />
+                        <br /><span class="dia-gray">仅支持提款身份认证为<b>哈*</b>的银行借记卡</span>
+                        <div class="bankcard-tip">
+                            6225 8888 8888 8888 028
+                            <sup class="ct"></sup>
+                            <sub class="ct"></sub>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reqtip">
+            <b>提款手续费及到账时间</b>
+            <p class="modpli"><i></i>本站目前支持提款至<em>15</em>家银行，每笔提款金额最少为<em>1</em>元。</p>
+            <p class="modpli"><i></i>提款手续费由银行收取，搜狗彩票为您提供补贴，您每笔仅需向银行支付<em>1</em>元钱手续费。</p>
+            <p class="modpli"><i></i>搜狗彩票会第一时间为您办理您的提款申请。</p>
+            <p class="modpli"><i></i>您的提款将在三个工作日左右到账，具体到账时间由银行决定。</p>
+        </div>
+        <div class="modbtn">
+            <a class="fbtn" href="#">确认绑定</a>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d9" style="position:fixed;_position:absolute;width:650px;margin-left:-325px;left:50%;top:10%;z-index:1001">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close">&times;</i>找回密码</div>
+        <div class="modpwd">
+            <div class="tips">提醒：您将通过实名信息+手机验证码双重校验重置支付密码。</div>
+            <dl>
+                <dd>
+                    <p>第一步：实名信息校验</p>
+                    <div class="fipt">
+                        <label class="f-h"><em>*</em> 真实姓名：</label>
+                        <div class="f-n"><input type="text" class="txt bdr" /><br />
+                        <em class="valid">真实姓名不能为空，请填写</em></div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h"><em>*</em> 证件类型：</label>
+                        <div class="f-n">
+                        <select>
+                            <option>请选择</option>
+                            <option>身份证</option>
+                        </select><br />
+                        <em class="valid">请选择证件类型</em>
+                        </div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h"><em>*</em> 证件号码：</label>
+                        <div class="f-n"><input type="text" class="txt bdr" /><br />
+                        <em class="valid">证件号码不能为空，请填写</em></div>
+                    </div>
+                </dd>
+                <dd>
+                    <p>第二步：绑定手机号验证<span>（15分钟内最多可以获取三次短信验证码，如暂时未收到短信，请稍后再尝试。）</span></p>
+                    <div class="fipt">
+                        <label class="f-h"><em>*</em> 手机号码：</label>
+                        <div class="f-n">186****8888 <a href="" class="fbtn min-white">发送验证码</a></div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h"><em>*</em> 输入验证码：</label>
+                        <div class="f-n"><input type="text" class="txt bdr val" value="请填写收到的短信验证码" /> <a href="" class="bluelink">手机无法收到验证码？</a><br />
+                        <em class="valid">短信验证码错误</em></div>
+                    </div>
+                </dd>
+                <dd>
+                    <p>第三步：重置支付密码</p>
+                    <div class="fipt">
+                        <label class="f-h">新密码：</label>
+                        <div class="f-n"><input type="password" class="txt bdr" /><br />
+                        <em class="valid">新密码不能为空，请填写</em></div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h">再输入一遍：</label>
+                        <div class="f-n"><input type="password" class="txt bdr" /><br />
+                        <em class="valid">请重新填写新密码</em></div>
+                    </div>
+                </dd>
+            </dl>
+            <div class="modbtn">
+                <a class="fbtn long" href="#">提交</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d10" style="position:fixed;_position:absolute;width:650px;margin-left:-325px;left:50%;top:10%;z-index:1001">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close">&times;</i>找回密码</div>
+        <div class="modpwd">
+            <div class="tips">提醒：您将通过密码保护问题重置支付密码。</div>
+            <dl>
+                <dd>
+                    <p>第一步：安全问题验证</p>
+                    <div class="fipt">
+                        <label class="f-h">原问题：</label>
+                        <div class="f-n"><b>您妈妈的名字是什么？</b></div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h">答案：</label>
+                        <div class="f-n"><input type="text" class="txt bdr" /><br />
+                        <em class="valid">答案不能为空，请填写</em></div>
+                    </div>
+                </dd>
+                <dd>
+                    <p>第二步：绑定手机号验证<span>（15分钟内最多可以获取三次短信验证码，如暂时未收到短信，请稍后再尝试。）</span></p>
+                    <div class="fipt">
+                        <label class="f-h"><em>*</em> 手机号码：</label>
+                        <div class="f-n">186****8888 <a href="" class="fbtn min-white">发送验证码</a></div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h"><em>*</em> 输入验证码：</label>
+                        <div class="f-n"><input type="text" class="txt bdr val" value="请填写收到的短信验证码" /> <a href="" class="bluelink">手机无法收到验证码？</a><br />
+                        <em class="valid">短信验证码不能为空，请填写</em></div>
+                    </div>
+                </dd>
+                <dd>
+                    <p>第三步：重置支付密码</p>
+                    <div class="fipt">
+                        <label class="f-h">新密码：</label>
+                        <div class="f-n"><input type="password" class="txt bdr" /><br />
+                        <em class="valid">新密码不能为空，请填写</em></div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h">再输入一遍：</label>
+                        <div class="f-n"><input type="password" class="txt bdr" /><br />
+                        <em class="valid">请重新填写新密码</em></div>
+                    </div>
+                </dd>
+            </dl>
+            <div class="modbtn">
+                <a class="fbtn long" href="#">提交</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d11" style="position:fixed;_position:absolute;width:650px;margin-left:-325px;left:50%;top:10%;z-index:1001">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close">&times;</i>重置安全问题和答案</div>
+        <div class="modpwd">
+            <div class="tips">提醒：您将重置安全问题</div>
+            <dl>
+                <dd class="req">
+                    <div class="fipt">
+                        <label class="f-h">重置安全答案：</label>
+                        <div class="f-n"><span class="stxt">（重置成功后，以后忘记支付密码可以通过安全答案和绑定手机<a href="" class="bluelink">自助找回</a>）</span></div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h"><em>*</em> 之前的安全问题：</label>
+                        <div class="f-n">
+                            <select>
+                                <option>请选择安全问题</option>
+                                <option>您爸爸的名字是什么？</option>
+                                <option>您妈妈的名字是什么？</option>
+                                <option>您的出生地是哪里？</option>
+                                <option>您的生日是哪天？</option>
+                                <option>您老师的名字是什么？</option>
+                                <option>您的职业？</option>
+                            </select><br />
+                        <em class="valid">请选择安全问题</em>
+                        </div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h"><em>*</em> 之前的问题答案：</label>
+                        <div class="f-n"><input type="text" class="txt bdr" /><br />
+                        <em class="valid">请输入安全问题答案</em></div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h"><em>*</em> 新的安全问题：</label>
+                        <div class="f-n">
+                            <select>
+                                <option>请选择安全问题</option>
+                                <option>您爸爸的名字是什么？</option>
+                                <option>您妈妈的名字是什么？</option>
+                                <option>您的出生地是哪里？</option>
+                                <option>您的生日是哪天？</option>
+                                <option>您老师的名字是什么？</option>
+                                <option>您的职业？</option>
+                            </select><br />
+                        <em class="valid">请选择安全问题</em>
+                        </div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h"><em>*</em> 新的问题答案：</label>
+                        <div class="f-n"><input type="text" class="txt bdr" /><br />
+                        <em class="valid">请输入安全问题答案</em></div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h"><em>*</em> 请输入支付密码：</label>
+                        <div class="f-n"><input type="text" class="txt bdr" /> <a href="" class="bluelink">忘记支付密码？</a><br />
+                        <em class="valid">请输入支付密码</em></div>
+                    </div>
+                </dd>
+            </dl>
+            <div class="modbtn">
+                <a class="fbtn long" href="#">重置答案</a>
+            </div>
+            <div class="reqtip">
+                <p class="modpli"><i></i>
+                    温馨提示：<br />
+                    1.您每天只能充值一次安全问题和答案；<br />
+                    2.请牢记您的安全问题和答案，以方便您以后再找回密码时使用；<br />
+                    3.如有任何问题，欢迎您联系我们的在线客服。
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d12" style="display:block;position:fixed;_position:absolute;width:420px;margin-left:-210px;left:50%;top:10%;z-index:1001">
+<div class="modal">
+    <div class="modcon fast-login">
+        <div class="title"><i title="关闭" class="close">&times;</i>账号登录</div>
+        <div class="modbox">
+            <div class="fipt">
+                <label class="f-h">登录账号：</label>
+                <div class="f-n">
+                    <input type="text" class="txt" /> <a href="">忘记账号？</a>
+                    <em class="tip">您输入的账号有误</em>
+                </div>
+            </div>
+            <div class="fipt">
+                <label class="f-h">登录密码：</label>
+                <div class="f-n">
+                    <input type="text" class="txt" /> <a href="">忘记密码？</a>
+                    <em class="tip">密码不能为空</em>
+                </div>
+            </div>
+            <div class="fipt">
+                <label class="f-h">验 证 码：</label>
+                <div class="f-n">
+                    <input type="text" class="txt validcode" />
+                    <img src="http://dev.cp.sogou.com/login/user/captcha/withdraw/gen.html" class="validpic" />
+                    <a class="change" href="#">换一张</a>
+                    <em class="tip">验证码不能为空，请填写</em>
+                </div>
+            </div>
+        </div>
+        <div class="modbtn">
+            <a class="fbtn" href="#">登 录</a> <a href="">注册新账号</a>
+            <em class="tip">用户名或密码错误</em>
+        </div>
+        <div class="qtway">
+            其他方式登录：<a href="">QQ登录</a>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d13" style="position: fixed;_position:absolute; width: 360px; margin-left: -180px; left: 50%; top: 100px;">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close">×</i>提示</div>
+        <div class="modbox">
+           <p class="txt-center">
+               支付金额超过上限<b class="dia-red">990000</b>元，请返回重新选择
+           </p>
+           <div class="modbtn"><a class="fbtn long" href="#">确 定</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d14" style="position: fixed;_position:absolute; width: 420px; margin-left: -210px; left: 50%; top: 20%; z-index: 1001">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close">×</i>温馨提示</div>
+        <div class="modbox">
+            <div class="tip-ico" style="margin:15px 0 0 20px">
+                <i class="tip-warn"></i>
+                <p class="warn-cont">
+                    <span class="dia-blue">哈米</span> (hami_liu@gamil.com)
+                    <br>您的账户余额不足，请先进行充值
+                </p>
+            </div>
+            <div class="modbtn">
+                <a class="fbtn" href="#">立即充值</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d15" style="position: fixed;_position:absolute; width: 430px; margin-left: -215px; left: 50%; top: 20%; z-index: 1001">
+<div class="modal">
+    <div class="modcon" style="padding-bottom:5px">
+        <div class="title"><i title="关闭" class="close">×</i>提示</div>
+        <div class="modbox">
+            <div class="tip-ico" style="margin:15px 0 0 20px">
+                <i></i>
+                <p class="warn-cont">
+                    <b style="display:block;margin-bottom:8px">恭喜您hami,彩票账户充值成功！</b>
+                    充值金额：<b class="dia-red">2.00</b><b>元</b><br />
+                    订单编号：23522702089
+                </p>
+            </div>
+            <div class="modbtn-l">
+                <a class="fbtn long" href="#">确认关闭</a>&nbsp;&nbsp;
+                <a href="" class="dia-blue">返回支付页面继续操作</a>
+            </div>
+        </div>
+        <div class="reqtip" style="padding:5px">
+            <p class="modpli"><span class="dia-gray">温馨提示：充值过程中遇到问题，可在第一时间联系<a href="" class="dia-blue underline">在线客服</a><br />
+            客服热线：</span>010-59059560</p>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d16" style="position: fixed;_position:absolute; width: 430px; margin-left: -215px; left: 50%; top: 20%; z-index: 1001">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close">×</i>温馨提示</div>
+        <div class="modbox">
+            <div class="tip-ico" style="margin:15px 0 0 10px">
+                <i></i>
+                <p class="warn-cont">
+                    <b style="display:block;margin-bottom:8px">恭喜您，投注成功！</b>
+                    <span class="dia-gray">您可以去 <a href="" class="dia-blue">我的订单</a> 查看投注记录及中奖情况！<br />此面板在<span class="dia-red">1</span>秒后自动关闭。</span>
+                </p>
+            </div>
+            <div class="modbtn">
+                <a class="fbtn long" href="#">确定</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d17" style="position: fixed;_position:absolute; width: 460px; margin-left: -230px; left: 50%; top: 100px;">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close">×</i>确认付款</div>
+        <div class="modbox">
+           <div class="dia-ipt">
+               <div class="fipt">
+                   <label class="f-h">订单名称：</label>
+                   <div class="f-n f14"><b>胜负彩 第2014004期</b></div>
+               </div>
+               <div class="fipt">
+                   <label class="f-h">订单金额：</label>
+                   <div class="f-n f14"><b><span class="dia-red">2.00</span>元</b></div>
+               </div>
+               <div class="fipt">
+                   <label class="f-h">现金余额：</label>
+                   <div class="f-n f14"><b><span class="dia-red">12.00</span>元</b></div>
+               </div>
+               <div class="fipt" style="height:63px;margin:0">
+                   <label class="f-h">支付密码：</label>
+                   <div class="f-n"><input type="text" class="txt bdr" />&nbsp;&nbsp;<a href="" class="dia-blue">找回支付密码</a><p class="dia-red" style="line-height:18px">您的支付密码已经连续错误5次，<br />请您明天再继续尝试或联系客服</p></div>
+               </div>
+           </div>
+           <div class="modbtn"><a class="fbtn" href="#">立即支付</a>&nbsp;&nbsp;<a class="dia-blue" href="">返回修改</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d18" style="position:fixed;_position:absolute;width:420px;margin-left:-210px;left:50%;top:20%;z-index:1001">
+<div class="modal">
+    <div class="modcon">
+        <div class="title"><i title="关闭" class="close">&times;</i>提示</div>
+        <div class="modbox">
+            <div class="tip-ico">
+                您好，第 <span class="dia-red">20140326</span> 期已截止，当前期是第 <span class="dia-red">20140327</span> 期，投注时请确认您选择的期号。<em class="dia-red">10</em>秒后将自动关闭！
+            </div>
+            <div class="modbtn"><a class="fbtn long" href="#">确定</a></div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="dialog d19" style="position:fixed;_position:absolute;width:480px;margin-left:-210px;left:50%;top:10%;z-index:1001">
+<div class="modal">
+    <div class="modcon fast-reg">
+        <div class="title"><i title="关闭" class="close">&times;</i>账号注册</div>
+        <div class="modbox">
+            <div class="fipt">
+                <label class="f-h">用户名</label>
+                <div class="f-n">
+                    <input type="text" class="txt" /><i class="reg-right"></i>
+                    <br />
+                    <span>4-16位，字母开头的字母、数字、下划线或组合</span>
+                </div>
+            </div>
+            <div class="fipt">
+                <label class="f-h">密码</label>
+                <div class="f-n">
+                    <input type="text" class="txt" /><i class="reg-error"></i>
+                    <br />
+                    <span>6-16位，字母(区分大小写)、数字、字符</span>
+                </div>
+            </div>
+            <div class="fipt">
+                <label class="f-h">确认密码</label>
+                <div class="f-n">
+                    <input type="text" class="txt" /><i class="reg-error"></i>
+                    <br />
+                    <span>请再次输入密码</span>
+                </div>
+            </div>
+            <div class="fipt">
+                <label class="f-h">验证码</label>
+                <div class="f-n">
+                    <input type="text" class="txt validcode" />
+                    <img src="http://dev.cp.sogou.com/login/user/captcha/withdraw/gen.html" class="validpic" />
+                    <a href="#" class="change">换一张</a>
+                    <br />
+                    <span>请输入图中的字母或数字，不区分大小写</span>
+                </div>
+            </div>
+            <div class="fipt">
+                <div class="f-n">
+                    <a class="fbtn" href="#">立即注册</a>
+                    <p class="regrule"><label><input type="checkbox" />我已阅读并同意<a target="_blank" href="">《搜狗用户服务条款》</a></label></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="diaLink" style="line-height:30px;text-align:left;background:#fff;border:1px solid #ccc;padding:10px">
+   <a href="d1">QQ认证失败提示</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a href="d2">修改手机号1</a>&nbsp;&nbsp;
+   <a href="d3">修改手机号2</a>&nbsp;&nbsp;
+   <a href="d4">修改手机号3</a>&nbsp;&nbsp;
+   <a href="d5">修改手机号4-提示</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a href="d6">充值-弹层</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a href="d7">银行卡提示</a>&nbsp;&nbsp;
+   <a href="d8">添加银行卡</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a href="d9">找回密码1</a>&nbsp;&nbsp;
+   <a href="d10">找回密码2</a>&nbsp;&nbsp;
+   <a href="d11">找回密码3</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a href="d12">快速登录</a><br />
+   <a href="d13">支付超上限</a>&nbsp;&nbsp;
+   <a href="d14">余额不足</a>&nbsp;&nbsp;
+   <a href="d15">充值成功</a>&nbsp;&nbsp;
+   <a href="d16">投注成功</a>&nbsp;&nbsp;
+   <a href="d17">确认付款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a href="d18">快3结束提示</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+   <a href="d19">首页快速注册</a>
+</div>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<script src="src/js/base.js" data-main="src/js/main"></script>
+<script type="text/javascript">
+$(".diaLink a").on("click",function(){
+    var name = $(this).attr("href");
+    $(".dialog").hide()
+    $("."+ name +"").show();
+    return false;
+})
+$(".close").on("click",function(){
+    $(this).parents(".dialog").hide();
+})
+$(".bankcard").on("keydown",function(){
+    $(".bankcard-tip").show()
+})
+$(".bankcard").on("blur",function(){
+    $(".bankcard-tip").hide()
+})
+</script>
+</body>
+</html>

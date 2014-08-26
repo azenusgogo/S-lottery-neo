@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="src/css/main.css"/>
+</head>
+<body>
+<div class="topbar">
+    <div class="wrapper">
+        <ul class="toplinks">
+            <li><a href="">收藏本站</a></li> |
+            <li><a href="">设为首页</a></li> |
+            <li><a href="">保存到桌面</a></li>
+        </ul>
+        <div class="top_ulink">
+            欢迎您，<span>guest</span>
+            <a href="">购彩记录</a>
+            <a href="">账户明细</a>
+            <a href="">充值</a>
+            <a href="">提款</a>
+            <a href="">修改密码</a>
+            <a href="">退出登录</a>
+
+            <!--余额显示效果.start-->
+            &nbsp;&nbsp;&nbsp;
+            <!-- 可用余额：<em>********</em> 元 -->
+            可用余额：<em><b>21123.00</b></em> 元
+            <a href="#" class="uout">显示</a>
+            <!--余额显示效果.end-->
+
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="wrapper cf">
+        <a href="" class="logo ct">搜狗彩票</a>
+        <div class="kefu">
+            <p class="ol-kf"><a href=""><i></i>在线客服</a></p>
+            <p>客服电话<span>010-8829 8888</span></p>
+        </div>
+    </div>
+</div>
+<div class="menu">
+    <div class="wrapper">
+        <div class="cp-type" id="nav_memu">
+            <b>选择彩票</b>
+            <ul>
+                <li><a href="">双色球</a><span>2元能中1000万</span></li>
+                <li class="dlt"><a href="">大乐透</a><span>3元可中1600万</span></li>
+                <li class="k3"><a href="">新快3</a><span>骰子游戏好玩易中</span></li>
+                <li class="x5"><a href="">11选5</a><span>猜中一个号有奖</span></li>
+                <li class="qxc"><a href="">七星彩</a><span>特别容易中奖</span></li>
+                <li class="qlc"><a href="">七乐彩</a><span>特别容易中奖</span></li>
+                <li class="sfc"><a href="">胜平负</a><span>特别容易中奖</span></li>
+                <li class="x9"><a href="">任选9</a><span>特别容易中奖</span></li>
+            </ul>
+        </div>
+        <ul class="dh">
+            <li><a href="">首页</a></li>
+            <li><a href="" class="cur">购彩大厅</a></li>
+            <li><a href="">开奖公告</a></li>
+            <li><a href="">购彩工具</a></li>
+            <li><a href="" class="nobg">帮助中心</a></li>
+        </ul>
+    </div>
+</div>
+<div class="cp-infos wrapper">
+    <div class="info1" id="up_top">
+        <h1>双色球 第 <b>2014014</b> 期</h1>
+        投注还剩：<em id="ball_timer"></em>&nbsp;&nbsp;
+        购彩截止：2014-02-11 <b>19:57</b>&nbsp;&nbsp;
+        周一、三、六 <b>20:30</b> 开奖
+        <span>今日开奖</span>
+    </div>
+    <div class="info2 ssq-bg">
+        <a href="" class="ilogo ssq-logo ct">双色球</a>
+        <div class="imenu">
+            <a href="" class="cur">选号投注<span class="ct"></span></a>
+        </div>
+        <div class="ilink">
+            <a href="">玩法介绍</a>　|　<a href="">奖金计算</a>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="cp-sub-nav">
+        <ul id="toggle_t">
+            <li class="active">
+                <a href="#">普通投注</a>
+            </li>
+            <li>
+                <a href="#">胆拖投注</a>
+            </li>
+            <li>
+                <a href="#">杀号定胆</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="wrapper">
+    <div class="row cf">
+        <div class="row-left">
+            <div class="toggle_c ball-list cf" id="py_play">
+                <div class="play-tips">
+                    至少选6个红球和1个篮球组合成一注彩票，单注最高奖金<em>10000</em>万元
+                    <i class="tips-ico">
+                        玩法
+                        <span class="ct"></span>
+                    </i>
+                </div>
+                <div class="red-ball">
+                    <div class="h">
+                        <em>红球区</em>
+                        至少选择6个红球
+                    </div>
+                    <ul class="ball cf">
+                        <li><em data-model='{"color":"red","number":"1"}'>01</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"2"}'>02</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"3"}'>03</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"4"}'>04</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"5"}'>05</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"6"}'>06</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"7"}'>07</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"8"}'>08</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"9"}'>09</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"10"}'>10</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"11"}'>11</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"12"}'>12</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"13"}'>13</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"14"}'>14</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"15"}'>15</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"16"}'>16</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"17"}'>17</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"18"}'>18</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"19"}'>19</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"20"}'>20</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"21"}'>21</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"22"}'>22</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"23"}'>23</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"24"}'>24</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"25"}'>25</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"26"}'>26</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"27"}'>27</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"28"}'>28</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"29"}'>29</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"30"}'>30</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"31"}'>31</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"32"}'>32</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"33"}'>33</em><span>1</span></li>
+                    </ul>
+                    <ul class="f cf">
+                        <li>
+                            <select class="red-n" data-color="red">
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                            </select>
+                        </li>
+                        <li>
+                            <a href="#" class="btn rndBtn" data-color="red">机选红球</a>
+                        </li>
+                        <li>
+                            <a href="#" class="clear" data-color="red">清空</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hr ct"></div>
+                <div class="blue-ball">
+                    <div class="h">
+                        <em>蓝球区</em>
+                        至少选择1个蓝球
+                    </div>
+                    <ul class="ball cf">
+                        <li><em data-model='{"color":"blue","number":"1"}'>01</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"2"}'>02</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"3"}'>03</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"4"}'>04</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"5"}'>05</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"6"}'>06</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"7"}'>07</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"8"}'>08</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"9"}'>09</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"10"}'>10</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"11"}'>11</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"12"}'>12</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"13"}'>13</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"14"}'>14</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"15"}'>15</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"16"}'>16</em><span>1</span></li>
+                        <li><a href="#" class="allbtn blueAll">全选</a></li>
+                    </ul>
+                    <ul class="f">
+                        <li>
+                            <select class="blue-n" data-color="blue">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                            </select>
+                        </li>
+                        <li>
+                            <a href="#" class="btn rndBtn" data-color="blue">机选蓝球</a>
+                        </li>
+                        <li>
+                            <a href="#" class="clear" data-color="blue">清空</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sel-info">
+                    您选了<em>0</em>个红球，<span>0</span>个蓝球，共<em>0</em>注，<em>0</em>元
+                </div>
+                <div class="sel-ball cf">
+                    <a href="#" class="btn selSubmitBtn" data-btn="add">确认选号</a>
+                    <a href="#" class="clear" data-color="all">清空选号</a>
+                </div>
+                <i class="tips-ico ti1">
+                    选号
+                    <span class="ct"></span>
+                </i>
+                <i class="tips-ico ti2 game-yl-tip1">
+                    遗漏
+                    <span class="ct"></span>
+                </i>
+            </div>
+            <div style="display: none" class="toggle_c ball-list ball-list-dt cf" id="dt_play">
+                <div class="play-tips">
+                    选1～5个红球胆码、选至少1个红球拖码（胆码+拖码≥6个），至少1个蓝球，单注最高奖金<em>10000</em>万元
+                    <i class="tips-ico">
+                        玩法
+                        <span class="ct"></span>
+                    </i>
+                </div>
+                <div class="red-ball">
+                    <div class="h">
+                        <em>红球胆码区</em>
+                        我认为必出的号码 至少选择1个，最多可选5个
+                    </div>
+                    <ul class="ball cf">
+                        <li><em data-model='{"color":"red_dm","number":"1"}'>01</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"2"}'>02</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"3"}'>03</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"4"}'>04</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"5"}'>05</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"6"}'>06</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"7"}'>07</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"8"}'>08</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"9"}'>09</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"10"}'>10</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"11"}'>11</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"12"}'>12</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"13"}'>13</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"14"}'>14</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"15"}'>15</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"16"}'>16</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"17"}'>17</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"18"}'>18</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"19"}'>19</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"20"}'>20</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"21"}'>21</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"22"}'>22</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"23"}'>23</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"24"}'>24</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"25"}'>25</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"26"}'>26</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"27"}'>27</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"28"}'>28</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"29"}'>29</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"30"}'>30</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"31"}'>31</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"32"}'>32</em><span>1</span></li>
+                        <li><em data-model='{"color":"red_dm","number":"33"}'>33</em><span>1</span></li>
+                    </ul>
+                </div>
+                <div class="red-ball">
+                    <div class="h">
+                        <em>红球拖码区</em>
+                        我认为可能出的号码 可选1或多个
+                    </div>
+                    <ul class="ball cf">
+                        <li><em data-model='{"color":"red","number":"1"}'>01</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"2"}'>02</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"3"}'>03</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"4"}'>04</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"5"}'>05</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"6"}'>06</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"7"}'>07</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"8"}'>08</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"9"}'>09</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"10"}'>10</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"11"}'>11</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"12"}'>12</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"13"}'>13</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"14"}'>14</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"15"}'>15</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"16"}'>16</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"17"}'>17</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"18"}'>18</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"19"}'>19</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"20"}'>20</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"21"}'>21</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"22"}'>22</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"23"}'>23</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"24"}'>24</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"25"}'>25</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"26"}'>26</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"27"}'>27</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"28"}'>28</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"29"}'>29</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"30"}'>30</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"31"}'>31</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"32"}'>32</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"33"}'>33</em><span>1</span></li>
+                    </ul>
+                </div>
+                <div class="blue-ball">
+                    <div class="h">
+                        <em>蓝球区</em>
+                        至少选择1个蓝球
+                    </div>
+                    <ul class="ball cf">
+                        <li><em data-model='{"color":"blue","number":"1"}'>01</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"2"}'>02</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"3"}'>03</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"4"}'>04</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"5"}'>05</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"6"}'>06</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"7"}'>07</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"8"}'>08</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"9"}'>09</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"10"}'>10</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"11"}'>11</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"12"}'>12</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"13"}'>13</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"14"}'>14</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"15"}'>15</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"16"}'>16</em><span>1</span></li>
+                    </ul>
+                </div>
+                <div class="sel-info">
+                    您选了<em>0</em>个红球（<em>0</em>个红球胆码，<em>0</em>个红球拖码），<span>0</span>个蓝球，共<em>0</em>注，<em>0</em>元
+                </div>
+                <div class="sel-ball cf">
+                    <a href="#" class="btn selSubmitBtn" data-btn="add">确认选号</a>
+                    <a href="#" class="clear" data-color="all">清空选号</a>
+                </div>
+                <i class="tips-ico ti1">
+                    选号
+                    <span class="ct"></span>
+                </i>
+                <i class="tips-ico ti2 game-yl-tip1">
+                    遗漏
+                    <span class="ct"></span>
+                </i>
+            </div>
+            <div style="display: none" class="toggle_c ball-list cf" id="sh_play">
+                <div class="play-tips">
+                    同一个号码点击一下为"定胆"、点击两下为"杀号"、点击三下"还原"
+                    <i class="tips-ico">
+                        玩法
+                        <span class="ct"></span>
+                    </i>
+                </div>
+                <div class="red-ball">
+                    <div class="h">
+                        <em>红球区</em>
+                        至少选择6个红球
+                    </div>
+                    <ul class="ball cf">
+                        <li><em data-model='{"color":"red","number":"1"}'>01</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"2"}'>02</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"3"}'>03</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"4"}'>04</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"5"}'>05</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"6"}'>06</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"7"}'>07</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"8"}'>08</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"9"}'>09</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"10"}'>10</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"11"}'>11</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"12"}'>12</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"13"}'>13</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"14"}'>14</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"15"}'>15</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"16"}'>16</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"17"}'>17</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"18"}'>18</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"19"}'>19</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"20"}'>20</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"21"}'>21</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"22"}'>22</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"23"}'>23</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"24"}'>24</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"25"}'>25</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"26"}'>26</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"27"}'>27</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"28"}'>28</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"29"}'>29</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"30"}'>30</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"31"}'>31</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"32"}'>32</em><span>1</span></li>
+                        <li><em data-model='{"color":"red","number":"33"}'>33</em><span>1</span></li>
+                    </ul>
+                </div>
+                <div class="hr ct"></div>
+                <div class="blue-ball">
+                    <div class="h">
+                        <em>蓝球区</em>
+                        至少选择1个蓝球
+                    </div>
+                    <ul class="ball cf">
+                        <li><em data-model='{"color":"blue","number":"1"}'>01</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"2"}'>02</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"3"}'>03</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"4"}'>04</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"5"}'>05</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"6"}'>06</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"7"}'>07</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"8"}'>08</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"9"}'>09</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"10"}'>10</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"11"}'>11</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"12"}'>12</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"13"}'>13</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"14"}'>14</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"15"}'>15</em><span>1</span></li>
+                        <li><em data-model='{"color":"blue","number":"16"}'>16</em><span>1</span></li>
+                        <li><a href="#" class="allbtn blueAll">全选</a></li>
+                    </ul>
+                </div>
+                <div class="rnd-sel">
+                    我要选
+                    <select class="sel-redn">
+                        <!--<option value="6">6</option>-->
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                    </select>
+                    个红球（包含胆码），
+                    <select class="sel-bluen">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                    </select>
+                    个篮球，
+                    <select class="sel-mul">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                        <option value="50">50</option>
+                        <option value="60">60</option>
+                        <option value="70">70</option>
+                        <option value="80">80</option>
+                        <option value="90">90</option>
+                        <option value="100">100</option>
+                    </select>
+                    组
+                </div>
+                <div class="sel-info">
+                    您选了共 <em>5</em> 注， <em>10</em> 元
+                </div>
+                <div class="sel-ball cf">
+                    <a href="#" class="btn selSubmitBtn" data-btn="add">确认选号</a>
+                    <a href="#" class="clear" data-color="all">清空选号</a>
+                </div>
+                <i class="tips-ico ti1">
+                    选号
+                    <span class="ct"></span>
+                </i>
+                <i class="tips-ico ti2 game-yl-tip1">
+                    遗漏
+                    <span class="ct"></span>
+                </i>
+            </div>
+            <div class="ball-item-list" id="ball_list">
+                <div class="ball-item cf">
+                    <div class="list">
+                        <ul class="cf" id="item_parent"></ul>
+                    </div>
+                    <div class="aside">
+                        <ul class="cf">
+                            <li>
+                                <a href="#" class="rndBtn" data-n="1">机选1注</a>
+                            </li>
+                            <li>
+                                <a href="#" class="rndBtn" data-n="5">机选5注</a>
+                            </li>
+                            <li>
+                                <input type="text" value="10" class="rnd_n">
+                                <span>注</span>
+                                <a href="#" class="random rndBtn">机选</a>
+                            </li>
+                            <li>
+                                <a href="#" class="clear">清空列表</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ball-list-tips">
+                        <span class="bottom1 ct"></span>
+                        <span class="bottom2 ct"></span>
+                        <p>手气不错！机选一注试试</p>
+                    </div>
+                </div>
+                <div class="ball-count">
+                    您选了 <span class="count">0</span> 注，倍投 <input type="text" value="1" class="mul"> 倍，共 <span class="money">0</span> 元
+                </div>
+                <div class="cf ball-pay-method">
+                    <b>购买方式:</b>
+                    <label>
+                        <input type="radio" checked>
+                        <span>自购</span>
+                    </label>
+                    <span class="tips">
+                        由购买人自行全额购买彩票
+                        <i></i>
+                        <div class="ball-list-tips">
+                            <span class="top1 ct"></span>
+                            <span class="top2 ct"></span>
+                            <p><em>自购</em>：选号投注号码后，由自己全额支付购彩款；中奖后，自己独享全部税后奖金</p>
+                        </div>
+                    </span>
+                </div>
+                <div class="ball-submit">
+                    <a href="#" class="btn ct" id="ballSubmit">立即投注</a>
+                    <label class="cf">
+                        <input type="checkbox" checked>
+                        <span>我已经阅读并同意<a href="#" class="read_btn1">《用户委托投注协议》</a></span>
+                    </label>
+                </div>
+                <div class="ssq-intro cf">
+                    <h2><b>双色球中奖说明</b></h2>
+                    <table cellspacing="0" width="270">
+                        <tr>
+                            <th width="80">奖级</th>
+                            <th>中奖条件</th>
+                            <th>奖金</th>
+                        </tr>
+                        <tr>
+                            <td align="center">一等奖</td>
+                            <td align="left"><span class="ct">6+1</span></td>
+                            <td align="right">浮动</td>
+                        </tr>
+                        <tr>
+                            <td align="center">二等奖</td>
+                            <td align="left"><span class="ct iball-60">6+0</span></td>
+                            <td align="right">浮动</td>
+                        </tr>
+                        <tr>
+                            <td align="center">三等奖</td>
+                            <td align="left"><span class="ct iball-51">5+1</span></td>
+                            <td align="right">3000元</td>
+                        </tr>
+                        <tr>
+                            <td align="center">四等奖</td>
+                            <td align="left"><span class="ct iball-41">4+1</span><span class="ct iball-50">5+0</span></td>
+                            <td align="right">200元</td>
+                        </tr>
+                        <tr>
+                            <td align="center">五等奖</td>
+                            <td align="left"><span class="ct iball-31">3+1</span><span class="ct iball-40">4+0</span></td>
+                            <td align="right">10元</td>
+                        </tr>
+                        <tr>
+                            <td align="center">六等奖</td>
+                            <td align="left"><span class="ct iball-21">2+1</span><span class="ct iball-11">1+1</span><span class="ct iball-01">0+1</span></td>
+                            <td align="right">5元</td>
+                        </tr>
+                    </table>
+                    <ul class="fc-faq">
+                        <li>
+                            <strong>中奖了如何领取奖金？</strong>
+                            <p><i></i><b>中小奖：</b>除一等奖之外的其余奖项，开奖后2-3个小时，奖金就会派到您的360彩票账户里。</p>
+                            <p><i></i><b>一等奖：</b>360会第一时间联系您协商领奖方式，可选择委托360代领奖或亲自到中心兑奖。<a href="">详细</a></p>
+                            <p><i></i><b>奖金</b>无须消费可直接提款，单注中奖1万以上需要缴税20%。</p>
+                        </li>
+                        <li>
+                            <strong>合买中奖后，奖金怎样分配？</strong>
+                            <p><i></i>合买中奖后，税后奖金（扣掉发起人提成）将按照发起人和跟单人的出资比例进行分配，奖金直接派送到中奖用户的360彩票帐户中。<a href="">合买奖金计算</a></p>
+                        </li>
+                        <li>
+                            <strong>双色球派奖时间？</strong>
+                            <p><i></i>官方开奖以后，系统预计会在当晚23：50至次日凌晨2:00将中奖方案的金额派送到用户账户。</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row-right">
+            <h2><b>双色球奖池</b></h2>
+            <div class="pool-nav" id="up_pool">
+                <p>
+                    <b>等待公布...</b><br />
+                    每周二、四、日晚上21:30开奖
+                </p>
+            </div>
+            <h2><b>开奖公告</b></h2>
+            <div class="kj-nav" id="up_award">
+                <strong>2014014</strong>期 <em>2014-02-11</em>
+                <div class="kj-num">
+                    <i>01</i>
+                    <i>02</i>
+                    <i>03</i>
+                    <i>23</i>
+                    <i>18</i>
+                    <i>11</i>
+                    <i class="blue-ball-min">06</i>
+                    <a href="">详情</a>
+                </div>
+                <p>
+                    一等奖：<em>10</em>注，每注<em>6,994,695</em>元<br />
+                    二等奖：<em>109</em>注，每注<em>9,994,695</em>元
+                </p>
+                <table cellspacing="0" width="198">
+                    <tr>
+                        <th>期次</th>
+                        <th>开奖号码</th>
+                    </tr>
+                    <tr>
+                        <td>2014014期</td>
+                        <td class="wq-num">04 09 19 22 25 29 <b>15</b></td>
+                    </tr>
+                    <tr>
+                        <td>2014014期</td>
+                        <td class="wq-num">04 09 19 22 25 29 <b>15</b></td>
+                    </tr>
+                    <tr>
+                        <td>2014014期</td>
+                        <td class="wq-num">04 09 19 22 25 29 <b>15</b></td>
+                    </tr>
+                    <tr>
+                        <td>2014014期</td>
+                        <td class="wq-num">04 09 19 22 25 29 <b>15</b></td>
+                    </tr>
+                    <tr>
+                        <td>2014014期</td>
+                        <td class="wq-num">04 09 19 22 25 29 <b>15</b></td>
+                    </tr>
+                    <tr>
+                        <td>2014014期</td>
+                        <td class="wq-num">04 09 19 22 25 29 <b>15</b></td>
+                    </tr>
+                </table>
+            </div>
+            <h2><a href="" class="h3r">更多</a><b>帮助中心</b></h2>
+            <ul class="fc-list">
+                <li><a href="">新手购彩图解</a></li>
+                <li><a href="">电话委托购彩的流程是怎样的？</a></li>
+                <li><a href="">中奖了如何领奖？</a></li>
+                <li><a href="">中奖奖金如何提取？</a></li>
+                <li><a href="">支付遇到问题该怎么办？</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="login_body"></div>
+<input type="hidden" id="gameId" value="ssq">
+<input type="hidden" id="periodNo" value="2014014">
+<input type="hidden" id="endTime" value="1397131200000">
+<input type="hidden" id="serverTime" value="1397098665982">
+<input type="hidden" id="gameType" value="1">
+<!-- 停售 0 正常 1 -->
+<input type="hidden" id="gameStatus" value="1">
+<!-- 重复购买 -->
+<input type="hidden" id="defaultBets" value="08 09$01 02 03 04 05 06 07:01 02#10;01 02 03 04 05 06 08:01 02#10;01 02 03 08 05 06 09:01 02#10"/>
+<!---->
+<script src="http://account.sogou.com/static/api/passport.js"></script>
+<script src="src/js/base.js" data-main="src/js/ssq"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		   http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- for ajax with json -->
+	<mvc:annotation-driven
+		content-negotiation-manager="contentNegotiationManager" />
+
+	<bean id="contentNegotiationManager"
+		class="org.springframework.web.accept.ContentNegotiationManagerFactoryBean">
+		<property name="favorPathExtension" value="false" />
+		<property name="favorParameter" value="true" />
+		<property name="mediaTypes">
+			<value>
+				json=application/json
+				xml=application/xml
+			</value>
+		</property>
+	</bean>
+	<!-- Freemarker 配置 -->
+	<bean id="freemarkerConfig"
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
+		<property name="templateLoaderPath" value="/WEB-INF/ftl">
+		</property>
+		<property name="defaultEncoding" value="UTF-8"></property>
+		<property name="freemarkerSettings">
+			<props>
+				<prop key="template_update_delay">2592000</prop>
+				<prop key="locale">zh_CN</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
+		<property name="contentType" value="text/html;charset=UTF-8"></property>
+		<property name="suffix" value=".ftl" />
+	</bean>
+
+	<mvc:interceptors>
+		<!-- global interceptors start, pay attention to the sequence -->
+		<bean class="com.sogou.lottery.web.web.interceptor.ThreadLocalInterceptor" />
+		<!--<bean class="com.sogou.lottery.web.web.interceptor.LoginCheckInterceptor" 
+			/> -->
+		<bean class="com.sogou.lottery.web.web.interceptor.ClickJackingInterceptor" />
+		<bean class="com.sogou.lottery.web.web.interceptor.ParamCheckInterceptor" />
+		<!-- prepare common page data -->
+		<bean class="com.sogou.lottery.web.web.interceptor.CommonDataInterceptor" />
+		<bean class="com.sogou.lottery.web.web.interceptor.LoggerInterceptor" />
+		<!-- login check for ftl page -->
+		<mvc:interceptor>
+			<mvc:mapping path="/login/**/*.html" />
+			<bean class="com.sogou.lottery.web.web.interceptor.WebLoginInterceptor" />
+		</mvc:interceptor>
+		<!-- login check for ajax request -->
+		<mvc:interceptor>
+			<mvc:mapping path="/ajax/login/**/*.html" />
+			<bean class="com.sogou.lottery.web.web.interceptor.AjaxLoginInterceptor" />
+		</mvc:interceptor>
+		<!-- regist check for ajax -->
+		<mvc:interceptor>
+			<mvc:mapping path="/ajax/register/do.html" />
+			<bean class="com.sogou.lottery.web.web.interceptor.WebRegisterInterceptor" />
+		</mvc:interceptor>
+		<!-- all game page -->
+		<mvc:interceptor>
+			<mvc:mapping path="/ssq.html" />
+			<mvc:mapping path="/dlt.html" />
+			<mvc:mapping path="/qxc.html" />
+			<mvc:mapping path="/qlc.html" />
+			<mvc:mapping path="/k3js.html" />
+			<mvc:mapping path="/k3gx.html" />
+			<mvc:mapping path="/k3jl.html" />
+			<mvc:mapping path="/f14.html" />
+			<mvc:mapping path="/f9.html" />
+			<bean
+				class="com.sogou.lottery.web.web.interceptor.game.BaseGameInterceptor" />
+		</mvc:interceptor>
+
+		<!-- common game page -->
+		<mvc:interceptor>
+			<mvc:mapping path="/ssq.html" />
+			<mvc:mapping path="/dlt.html" />
+			<mvc:mapping path="/qxc.html" />
+			<mvc:mapping path="/qlc.html" />
+			<bean
+				class="com.sogou.lottery.web.web.interceptor.game.CommonGameInterceptor" />
+		</mvc:interceptor>
+		<!-- High frquencey game page -->
+		<mvc:interceptor>
+			<mvc:mapping path="/k3js.html" />
+			<mvc:mapping path="/k3gx.html" />
+			<mvc:mapping path="/k3jl.html" />
+			<bean
+				class="com.sogou.lottery.web.web.interceptor.game.HighFrequencyGameInterceptor" />
+		</mvc:interceptor>
+		<!-- Kuai3 game page -->
+		<mvc:interceptor>
+			<mvc:mapping path="/k3js.html" />
+			<mvc:mapping path="/k3gx.html" />
+			<mvc:mapping path="/k3jl.html" />
+			<bean
+				class="com.sogou.lottery.web.web.interceptor.game.Kuai3GameInterceptor" />
+		</mvc:interceptor>
+		<!-- Trad football game page -->
+		<mvc:interceptor>
+			<mvc:mapping path="/f14.html" />
+			<mvc:mapping path="/f9.html" />
+			<bean
+				class="com.sogou.lottery.web.web.interceptor.game.TradFootballGameInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+</beans>

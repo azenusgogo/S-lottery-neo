@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="src/css/main.css"/>
+    <style>
+    .area{height: 200px; padding: 100px; text-align: center;}
+    .area p{text-align: center; font-size: 50px; line-height: 60px;}
+    .dialog{width: 200px; height: 200px; position: absolute; background-color: red; display: none;}
+    </style>
+</head>
+<body>
+<div class="area">
+    <p>javascript</p>
+    <select>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+    </select>
+     <select>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+    </select>
+     <select>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+    </select>
+</div>
+<div class="area">
+    <select>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+    </select>
+     <select>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+    </select>
+     <select>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+    </select>
+</div>
+<div class="area">
+    <select>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+    </select>
+     <select>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+    </select>
+     <select>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+    </select>
+</div>
+<div class="area">
+    <select>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+    </select>
+     <select>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+    </select>
+     <select>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+        <option value="1">111111</option>
+    </select>
+</div>
+
+
+<a href="#" id="show1">显示</a>
+<div class="dialog" id="dialog">
+    <a href="#" class="dialog-close">11222</a>
+</div>
+<script src="src/js/base.js" data-main="src/js/main"></script>
+
+
+
+<script>
+    (function(){
+        "use strict";
+    
+        var _$window = $(window);
+        var _$document = $(document);
+        var _$html = $("html");
+        var _elem = document.documentElement;
+        var _body = document.body;
+        var _isIE6 = window.VBArray && !window.XMLHttpRequest;
+
+
+        var Mask = function(options){
+            options || (options = {});
+            this.bgc = options.bgc || "#000";
+            this.opacity = options.opacity || .3;
+            this.zIndex = options.zIndex || 9999;
+            this.id = options.id || _.uniqueId("MASK_");
+            this.init()
+        }
+        Mask.prototype = {
+            constructor : Mask,
+            show:function(){
+                var $el = this.$el;
+                if (_isIE6){
+                    _$window.on("resize.re",_.debounce(function(){
+                        // .hide().show() 解决iframe 高度不变 bug
+                        $el.css("height",_$window.height()).hide().show()
+                    }, 300));
+                    $el.css("height",_$window.height());
+                    this.el.style.setExpression('top', 'eval(document.documentElement.scrollTop)');
+                }
+                $el.show();
+            },
+            hide:function(){
+                if (this.el){
+                    if (_isIE6){
+                        this.el.style.removeExpression('top');
+                        _$window.off("resize.re")
+                    }
+                    this.$el.hide();
+                }
+            },
+            init:function(){
+                !this.el && this.render();
+                var $el = this.$el;
+                if (_isIE6){
+                    if (_$html.css("backgroundAttachment") != 'fixed'){
+                        _$html.css({
+                            zoom: 1,// 避免偶尔出现body背景图片异常的情况
+                            backgroundImage: 'url(about:blank)',
+                            backgroundAttachment: 'fixed'
+                        });
+                    }
+                    
+                }
+            },
+            render:function(){
+                var cssOptions = {
+                    width:"100%",
+                    backgroundColor:this.bgc,
+                    left:0,
+                    top:0,
+                    display:"none",
+                    zIndex:this.zIndex
+                }
+                if (_isIE6){
+                    cssOptions.position = "absolute";
+                    cssOptions.filter = "alpha(opacity="+this.opacity*100+")"
+                }else{
+                    cssOptions.height = "100%";
+                    cssOptions.position = "fixed";
+                    cssOptions.opacity = this.opacity
+                }
+                var $el = $("<div>",{
+                    id:this.id,
+                    css:cssOptions
+                });
+                if (_isIE6){
+                    $el.append('\
+                        <iframe src="about:blank" style="width:100%;height:100%;position:absolute;\
+                        top:0;left:0;z-index:-1;filter:alpha(opacity=0)"></iframe>\
+                    ')
+                }
+                this.$el = $el;
+                this.el = $el[0];
+                $el.prependTo("body");
+            }
+        }
+
+        var mask = new Mask;
+
+        var Dialog = function(options){
+            this.$el = $(options.el);
+            this.el = this.$el[0];
+            this.top = options.top || "auto";
+            this.left = options.left || "auto";
+            this.width = options.width || "auto";
+            this.zIndex = options.zIndex || 99999;
+            this.height = this.$el.height();
+            this.onload = options.onload || function(){};
+            this.onbeforeshow = options.onload || function(){};
+            this.onshow = options.onshow || function(){};
+            this.onbeforehide = options.onbeforehide || function(){};
+            this.onhide = options.onhide || function(){};
+            this.init()
+        };
+        Dialog.prototype = {
+            constructor : Dialog,
+            $: function(selector) {
+                return this.$el.find(selector);
+            },
+            init : function(){
+                var _this = this;
+                this.$(".dialog-close").on("click",function(){
+                    _this.hide();
+                    return false
+                });
+                this.onload()
+            },
+            show:function(){
+                var _this = this;
+                var r = this.onbeforeshow();
+                if (r == false) return;
+                _$window.on("resize.set",_.debounce(function(){
+                    _this.set();
+                }, 300));
+                _$window.on("scroll.set",_.debounce(function(){
+                    _this.set()
+                }, 300))
+                this.set(0);
+                this.$el.show();
+                mask.show();
+                this.onshow()
+            },
+            hide:function(){
+                var r = this.onbeforehide();
+                if (r == false) return;
+                _$window.off("resize.set");
+                _$window.off("scroll.set");
+                this.$el.hide();
+                mask.hide();
+                this.onhide()
+            },
+            set:function(n){
+                n || (n == 100)
+                var width = this.width;
+                var top = this.top == "auto" ? (_$window.height() - this.height)*0.382 : this.top;
+                var left = this.left == "auto" ? (_$window.width() - this.width)/2 : this.left;
+                var sTop =  _$document.scrollTop();
+                this.$el.stop().animate({
+                    width:width,
+                    left:left,
+                    top:top + sTop,
+                    position:"absolute",
+                    zIndex:this.zIndex
+                }, n)
+            }
+        }
+
+
+        var d = new Dialog({
+            el :"#dialog",
+            width:"420"
+        })
+        $("#show1").on("click",function(){
+             d.show();
+             return false
+        })
+       
+
+    })()
+</script>
+</body>
+</html>

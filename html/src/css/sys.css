@@ -1,0 +1,742 @@
+.underline{
+	text-decoration:underline;
+}
+.section{
+	width:988px;
+	border:1px solid #DDD;
+	margin:20px auto;
+	background:#fff;
+	padding-bottom:40px;
+}
+.section a{color:#005AA0;}
+.section a.btn-white{
+	color:#333;
+}
+.sys-tips{
+	text-align:center;
+	margin:25px;
+	font-weight:bold;
+	font-size:14px;
+}
+
+.sys-tips i.sys-err{
+	display:block;
+	width:156px;
+	height:80px;
+	margin:0 auto 10px;
+}
+.sys-500{
+	background-position:0 -80px;
+}
+.sys-err-txt{
+	line-height:30px;
+}
+.sys-btm{
+	border-top:1px dotted #CBCBCB;
+	margin-top:60px;
+	padding:30px 0;
+	text-align:center;
+	color:#666;
+	line-height:25px;
+}
+.sys-btm b{
+	font-size:14px;
+}
+.tip-ico{
+	line-height:25px;
+}
+.tip-ico i{
+	float:left;
+	width:48px;
+	height:48px;
+	vertical-align:middle;
+	margin-right:10px;
+}
+.tip-ico b{
+	font-size:14px;
+}
+.tip-ico a{
+	color:#005AA0;
+	text-decoration:underline;
+}
+.sys-tips i{
+	float:none;
+	display:inline-block;
+}
+.tip-ico .tip-warn{
+	background-position:0 -48px;
+}
+.sys-tips .uname{
+	color:#EB6100;
+}
+
+.min-login{
+	width:390px;
+	height:255px;
+	border:1px solid #ddd;
+	margin:auto;
+	padding:16px 20px;
+}
+.min-login form{
+	margin:30px auto 0;
+}
+.min-login h4{
+	border-left:3px solid #D51938;
+	height:16px;
+	line-height:16px;
+	padding-left:10px;
+	font-size:14px;
+	font-weight:bold;
+}
+.min-login .sub-btn{
+	text-align:center;
+	width:300px;
+	margin:auto;
+	line-height:45px;
+}
+.min-login .sub-btn .fbtn{
+	color:#fff;
+}
+.min-login .sub-btn span{
+	color:#999;
+}
+.fipt{
+	line-height:26px;
+	height:45px;
+}
+.fipt .f14{
+	font-size:14px;
+}
+.fipt .f-h{
+	float:left;
+	width:80px;
+	text-align:right;
+}
+.fipt .f-n{
+	margin-left:80px;
+	line-height:26px;
+	font-size:12px;
+}
+.fipt em{
+	color:#CB0000;
+}
+.fipt .f-n em.valid{
+	line-height:15px;
+	position:relative;
+	font-size:12px;
+	top:-6px;
+	*top:0;
+	_left:3px;
+}
+.fipt .f-n .gray{
+	color:#888;
+}
+.fipt select{
+	font-size:12px;
+	padding:3px;
+}
+.fipt .f-n .txt{
+	padding:4px;
+	border:1px solid #ddd;
+	width:168px;
+	font-size:14px;
+	outline:none;
+	vertical-align:middle;
+}
+.fipt .f-n .bdr{
+	border:1px solid #B1B4C2;
+}
+.fipt .f-n input.s1{
+	width:80px!important;
+}
+.fipt .f-n input.s2{
+	width:120px!important;
+}
+.fipt .f-n input.val{
+	color:#999;
+	font-size:12px;
+}
+.fipt .f-n .add-on{
+	display:inline-block;
+	height:26px;
+	vertical-align:middle;
+}
+.fipt .f12,.modal .f12{
+	font-size:12px;
+}
+.fipt .dia-gray,.modal .dia-gray{
+	color:#666;
+	font-size:12px;
+}
+.fipt .dia-green,.modal .dia-green{
+	display: none;
+	color:#1AAF13;
+	vertical-align:middle;
+}
+.fipt .dia-red,.modal .dia-red{
+	color:#CB0000;
+}
+.fipt .dia-blue,.modal .dia-blue{
+	color:#1E50A2;
+}
+
+.fbtn{
+	display:inline-block;
+	height:33px;
+	line-height:33px;
+	padding:0 25px;
+	background-position:0 -86px;
+	border-radius:3px;
+	font-size:14px;
+	color:#fff;
+}
+.btn-white{
+	border:1px solid #C2C5C7;
+	border-radius:2px;
+	background-position:0 -360px;
+	color:#333;
+}
+.u_login{
+	float:left;
+	width:290px;
+	height:290px;
+	border-right:1px solid #ddd;
+	padding:25px 30px;
+}
+.u_login h2{
+	border-left:3px solid #D51938;
+	padding-left:10px;
+	height:16px;
+	line-height:16px;
+	font-size:14px;
+	font-weight:bold;
+}
+.login-box{
+	margin:20px 15px 0;
+}
+.login-ipt{
+	height:75px;
+	line-height:15px;
+	position: relative;
+}
+.login-box .fl{
+	float:left;
+	color:#666;
+}
+.login-box .fr{
+	float:right;
+}
+.login-box .login-ipt input{
+	width:250px;
+	font-size:14px;
+	padding:8px 4px;
+	border:1px solid #ddd;
+	margin-top:5px;
+	outline:none;
+}
+.login-box .login-ipt input.validcode{
+	width:110px;
+}
+.login-box .login-ipt .validpic{
+	height:33px;
+	width: 78px;
+	border:1px solid #ddd;
+	vertical-align: bottom;
+	margin-left:3px;
+}
+.login-box .login-ipt .changevalid{
+	line-height: 35px;
+	vertical-align: bottom;
+	color: #005AA0;
+	margin-left: 3px;
+}
+.login-box .login-btn{
+	margin-left:80px;
+	margin-top:5px;
+	position: relative;
+}
+.login-ipt em.tip{
+	position:absolute;
+	color:#CB0000;
+	left:0;
+	top:56px;
+	line-height: 15px;
+	display: none;
+}
+.login-box .login-btn em.tip{
+	position: absolute;
+	top:-18px;
+	left:0;
+	color:#CB0000;
+	line-height:15px;
+	display: none;
+}
+
+.login-box .login-btn .fbtn{
+	color:#fff;
+}
+
+.login-box .captchaimg{
+	display: none;
+}
+
+.qqconnect{
+	background-position:0 -100px;
+	display:inline-block;
+	height:16px;
+	line-height:15px;
+	overflow:hidden;
+	vertical-align:middle;
+	padding-left:18px;
+	margin-left:10px;
+}
+.u_cover{
+	float:left;
+	width:637px;
+	height:340px;
+	position:relative;
+}
+.u_cover .fbtn{
+	position:absolute;
+	top:265px;
+	left:280px;
+}
+.u_footer{
+	text-align:center;
+	line-height:16px;
+	margin-top:26px;
+	line-height:25px;
+	color:#666;
+}
+.u_footer a{
+	color:#125297;
+	margin-right:15px;
+}
+.u_footer i.about{
+	background-position:0 -116px;
+	display:inline-block;
+	height:16px;
+	width:18px;
+	overflow:hidden;
+	vertical-align:middle;
+}
+.dialog{
+	display:none;
+}
+.modal{
+	padding:3px;
+	border-radius:3px;
+}
+
+.modal .modcon{
+	background:#fff;
+	padding-bottom:25px;
+}
+.modal .modcon .modbox{
+	padding:30px 24px 0;
+}
+.modal .fast-login a{
+	color:#0B72A4;
+	margin-left:6px;
+}
+.modal .fast-login .fipt{
+	height: 53px;
+}
+.modal .fast-login .f-n{
+	position: relative;
+}
+.modal .fast-login .f-n em.tip{
+	line-height: 16px;
+	color: #CB0000;
+	position: absolute;
+	top:31px;
+	left:0;
+	display: none;
+}
+.modal .fast-login .validcode{
+	width: 78px;
+}
+.modal .fast-login .validpic{
+	width: 80px;
+	height: 29px;
+	border:1px solid #ddd;
+	vertical-align: middle;
+	margin-left:5px;
+}
+.modal .fast-login .fbtn{
+	height:33px;
+	line-height:33px;
+	padding:0 25px;
+	color:#fff
+}
+.modal .fast-login .txt{
+	padding:6px;
+	vertical-align: middle;
+}
+.modal .fast-login .modbtn{
+	text-align:left;
+	margin-left:150px;
+	margin-top:0;
+	position: relative;
+}
+.modal .fast-login .modbtn em.tip{
+	position: absolute;
+	line-height: 16px;
+	color:#CB0000;
+	top:-18px;
+	left:0;
+	display: none;
+}
+.modal .fast-login .qtway{
+	padding-left:46px;
+	margin-top:20px;
+}
+.modal .fast-reg .fipt{
+	height: 68px;
+}
+.modal .fast-reg .f-h{
+	color:#626262;
+	font:bold 14px/30px simsun;
+}
+.modal .fast-reg .f-n{
+	padding-left:8px;
+}
+.modal .fast-reg .f-n i{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	overflow: hidden;
+	vertical-align: middle;
+	margin-left: 10px;
+	display: none;
+}
+.modal .fast-reg .f-n i.reg-right{
+	background-position: 0 -96px;
+}
+.modal .fast-reg .f-n i.reg-error{
+	background-position: 0 -122px;
+}
+.modal .fast-reg .f-n span{
+	color: #898989
+}
+.modal .fast-reg .f-n span.red{
+	color:#CB0000;
+}
+.modal .fast-reg .txt{
+	height:20px;
+	width:250px;
+}
+.modal .fast-reg .regrule{
+	color:#626262;
+	line-height:25px;
+	margin-top: 10px;
+}
+.modal .fast-reg .regrule input{
+	vertical-align: middle;
+	margin-right: 3px;
+}
+.modal .fast-reg .regrule a{
+	color:#0B72A4;
+}
+.modal .fast-reg .validcode{
+	width: 95px;
+}
+.modal .fast-reg .validpic{
+	width: 80px;
+	height: 28px;
+	border:1px solid #ddd;
+	vertical-align: middle;
+	margin-left: 6px;
+}
+.modal .fast-reg a.change{
+	color:#0A72A7;
+	margin-left: 6px;
+	vertical-align: middle;
+}
+.modal .fast-reg .fbtn{
+	width: 210px;
+	padding:0;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	font-weight: 700;
+}
+.modal .fast-reg .toggle{
+	color: #0A72A7
+}
+.modal .modcon .userAgreement {
+	height:360px;
+	overflow-y: scroll;
+    font-size: 14px;
+}
+.modal .modcon .risk{
+	height:300px;
+	overflow-y: scroll;
+    font-size: 14px;
+}
+.modal .modcon .userAgreement p,.modal .modcon .risk p {
+	padding: 6px 12px;
+text-indent: 12px;
+line-height: 1.5;
+}
+.modal .modcon .modbox .ptxt{
+	font-size:14px;
+	line-height:25px
+}
+.modal .modcon .modbox p.mod-tips{
+	color:#666;
+	line-height:20px;
+}
+.modal .modcon .modbox p.txt-center{
+	font-size:14px;
+	text-align:center;
+	padding:15px 0;
+	line-height: 25px;
+}
+.modbox .btm-tip{
+	text-align:left;
+	line-height:25px;
+	margin-top:10px;
+}
+
+.modbtn{
+	text-align:center;
+	margin-top:20px;
+}
+.modbtn-l{
+	margin-top:20px;
+	margin-left:120px;
+}
+.modbtn .backstep{
+	text-align:right;
+	margin-top:35px;
+	line-height:25px;
+}
+.modbtn .backstep a{
+	color:#1E50A2;
+	text-decoration:underline;
+}
+.modbtn .backstep i{
+	vertical-align:middle;
+}
+.modbtn .fbtn,.modbtn-l .fbtn{
+	height:28px;
+	line-height:28px;
+	padding:0 15px;
+}
+.modbtn .long,.modbtn-l .long{
+	width:96px;
+	padding:0;
+	text-align:center;
+}
+.modal .title{
+	height:38px;
+	line-height:38px;
+	background-position:0 -130px;
+	color:#fff;
+	font-weight:bold;
+	padding:0 15px;
+	font-size:14px;
+}
+.modal .title i{
+	float:right;
+	color:#fff;
+	font-size:20px;
+	cursor:pointer;
+}
+
+.dia-bank-ipt .f-n .dia-gray b{
+	font-size:12px;
+}
+.modal .warn-cont{
+	margin-left:58px;
+	font-size:14px;
+}
+.dia-bank-ipt{
+	margin-top:20px;
+	margin-left:30px;
+}
+.dia-bank-ipt .fipt{
+	font-size:14px;
+}
+.dia-bank-ipt .f-h{
+	width:115px;
+}
+.dia-bank-ipt .f-n{
+	margin-left:115px;
+	position: relative;
+}
+.dia-bank-ipt .f-n b{
+	font-size:14px;
+}
+.modpli{
+	padding-left:10px;
+	position:relative;
+	line-height:25px;
+}
+.modpli em{
+	color:#CB0000;
+}
+.modpli i{
+	display:inline-block;
+	width:2px;
+	height:2px;
+	background:#000;
+	overflow:hidden;
+	position:absolute;
+	top:12px;
+	left:0;
+	*top:6px;
+	_left:-8px;
+}
+.u-re-tel{
+	margin-top:25px;
+}
+.u-re-tel .f-h{
+	width:125px;
+	font-size:14px;
+	font-weight:700;
+}
+.u-re-tel .f-n{
+	margin-left:125px;
+	font-size:14px;
+}
+.u-re-tel .f-n input.txt{
+	width:130px;
+}
+.u-re-tel .min-white{
+	font-size:12px;
+	padding:1px 4px;
+	vertical-align:middle;
+}
+.u-re-tel .disabled{
+	color:#999;
+}
+.dia-ipt .fipt{
+	height:auto;
+	margin-bottom:10px;
+}
+.dia-ipt .f-h{
+	width:100px;
+	font-size:14px;
+}
+.dia-ipt .f-n{
+	margin-left:100px;
+}
+.dia-ipt .f14{
+	font-size:14px;
+}
+.modpwd .tips{
+	height:35px;
+	line-height:35px;
+	border-bottom:1px dotted #ddd;
+	padding-left:20px;
+}
+.modpwd dd{
+	border-bottom:1px dotted #ddd;
+	margin-top:10px;
+	padding-bottom:15px;
+}
+.modpwd dd p{
+	font-size:14px;
+	font-weight:700;
+	margin-bottom:20px;
+	padding-left:20px;
+	line-height:20px;
+}
+.modpwd dd p span{
+	font-size:12px;
+	font-weight:normal;
+}
+.modpwd dd .fipt{
+	margin-left:80px;
+	font-size:14px;
+}
+.modpwd dd .fipt em{
+	color:#CB0000;
+}
+.modpwd .f-h{
+	width:130px;
+}
+.modpwd .f-n{
+	margin-left:130px;
+	line-height:26px;
+}
+.modpwd .f-n b{
+	font-size:14px;
+}
+.modpwd .f-n .stxt{
+	font-size:12px;
+}
+.modpwd .f-n a.bluelink{
+	font-size:12px;
+	color:#146AC9;
+}
+.modpwd .f-n .fbtn{
+	padding:1px 4px;
+	font-size:12px;
+}
+.modpwd .f-n .disabled{
+	color: #999;
+}
+
+.modpwd .req{
+	margin-top:30px;
+	border:none;
+	padding:0;
+}
+.reqtip{
+	border-top:1px dotted #ddd;
+	padding:10px 20px;
+	margin-top:20px;
+	line-height:25px;
+}
+.reqtip b{
+	padding-left:10px;
+}
+.reqtip em{
+	color:#CB0000;
+}
+.bankcard-tip{
+	width:258px;
+	height:38px;
+	line-height:38px;
+	font:bold 20px/38px arial;
+	text-align:center;
+	border:1px solid #E6A163;
+	background:#FCFCDE;
+	border-radius:3px;
+	box-shadow:1px 1px 1px #ccc;
+	position:absolute;
+	top:-48px;
+	right:-20px;
+	display:none;
+}
+.bankcard-tip sup{
+	display:block;
+	border-width:6px;
+	border-color:transparent;
+	border-top-color:#E6A163;
+	border-style:solid dashed dashed dashed;
+	position:absolute;
+	bottom:-12px;
+	left:35px;
+}
+.bankcard-tip sub{
+	display:block;
+	border-width:6px;
+	border-color:transparent;
+	border-top-color:#FCFCDE;
+	border-style:solid dashed dashed dashed;
+	position:absolute;
+	bottom:-11px;
+	left:35px;
+}
+.sitepath{
+	height:40px;
+	line-height:40px;
+	font-family:simsun;
+}
+.sitepath a{
+	color:#146AC9;
+}

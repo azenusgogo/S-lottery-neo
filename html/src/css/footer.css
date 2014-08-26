@@ -1,0 +1,127 @@
+.hot-links{
+    width:948px;
+    height:30px;
+    line-height:30px;
+    padding:10px 20px;
+    background:#fff;
+    border:1px solid #ddd;
+    margin-top:10px;
+    position:relative;
+}
+.hot-links b{
+    font-size:14px;
+}
+.hot-links a{
+    margin-left:15px;
+    color:#626262;
+}
+.hot-links a.more{
+    position:absolute;
+    right:15px;
+    top:10px;
+    line-height:30px;
+    color:#0B74A4;
+    font-family:SimSun;
+}
+.footer{
+    background:#eee;
+    margin-top:15px;
+    padding-top:25px;
+    height:390px;
+}
+.guide-link{
+    height:145px;
+}
+.footer-logo{
+    width:205px;
+    height:115px;
+    float:left;
+}
+.guide-link ul{
+    float: left;
+    margin-left:35px;
+    display:inline;
+}
+.guide-link li{
+    float:left;
+    width:145px;
+    height:140px;
+    padding:5px 80px 0 20px;
+    border-left:1px solid #D7D7D7;
+}
+.guide-link li b{
+    font:700 15px/16px arial;
+    border-left:3px solid #D51A39;
+    padding-left:5px;
+    color:#626262;
+    display:block;
+    margin-bottom:16px;
+}
+.guide-link li a{
+    display:block;
+    line-height:26px;
+    height:26px;
+    color:#626262;
+}
+.guide-link li a .cube{
+    display:inline-block;
+    overflow:hidden;
+    width:3px;
+    height:3px;
+    background:#D51A39;
+    margin-right:5px;
+    vertical-align:middle;
+}
+.footer-info{
+    text-align:center;
+    line-height:30px;
+    margin-top:26px;
+}
+.footer-info .vimg{
+    display:inline-block;
+    width:132px;
+    height:47px;
+}
+.footer-info .v2{
+    width:149px;
+    background-position:-132px 0;
+}
+.footer-info .v3{
+    width:213px;
+    background-position:-281px 0;
+}
+.about-links{
+    margin:15px 0;
+}
+.about-links .fimg{
+    margin-top:10px;
+}
+.about-links i.about{
+    background-position: 0 -116px;
+    display: inline-block;
+    height: 16px;
+    width: 18px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.about-links a{
+    color:#0B71A2;
+    margin:0 5px;
+}
+.about-links .gray{
+    color:#909090;
+}
+.friendlink{
+    font-family:simsun;
+}
+.friendlink b{
+    color:#626262;
+    font-size:14px;
+}
+.friendlink a{
+    margin:0 10px;
+    color:#626262;
+}
+.friendlink a.more{
+    color:#0C72A3;
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="src/css/main.css"/>
+</head>
+<body>
+<div class="topbar">
+    <div class="wrapper">
+        <ul class="toplinks">
+            <li><a href="#">首页</a></li> |
+            <li><a href="#">购彩大厅</a></li> |
+            <li><a href="#">意见反馈</a></li> |
+            <li><a href="#">收藏本站</a></li> |
+            <li><a href="#">设为首页</a></li> |
+            <li><a href="#">保存到桌面</a></li>
+        </ul>
+        <div class="top_ulink">
+            欢迎您，<span>guest</span>
+            <a href="#">购彩记录</a>
+            <a href="#">账户明细</a>
+            <a href="#">充值</a>
+            <a href="#">提款</a>
+            <a href="#">修改密码</a>
+            <a href="#">退出登录</a>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="wrapper cf">
+        <a href="#" class="logo ct">搜狗彩票</a>
+        <div class="kefu">
+            <p class="ol-kf"><a href="#"><i></i>在线客服</a></p>
+            <p>客服电话<span>010-8829 8888</span></p>
+        </div>
+    </div>
+</div>
+<div class="menu">
+    <div class="wrapper">
+        <div class="cp-type">
+            <b>选择彩票</b>
+            <ul>
+                <li><a href="#">双色球</a><span>2元能中1000万</span></li>
+                <li class="dlt"><a href="#">大乐透</a><span>3元可中1600万</span></li>
+                <li class="k3"><a href="#">新快3</a><span>骰子游戏好玩易中</span></li>
+                <li class="x5"><a href="#">11选5</a><span>猜中一个号有奖</span></li>
+                <li class="qxc"><a href="#">七星彩</a><span>特别容易中奖</span></li>
+                <li class="qlc"><a href="#">七乐彩</a><span>特别容易中奖</span></li>
+                <li class="sfc"><a href="#">胜平负</a><span>特别容易中奖</span></li>
+                <li class="x9"><a href="#">任选9</a><span>特别容易中奖</span></li>
+            </ul>
+        </div>
+        <ul class="dh">
+            <li><a href="#" class="cur">首页</a></li>
+            <li><a href="#">购彩大厅</a></li>
+            <li><a href="#">开奖公告</a></li>
+            <li><a href="#">购彩工具</a></li>
+            <li><a href="#" class="nobg">帮助中心</a></li>
+        </ul>
+    </div>
+</div>
+<div class="wrapper cf ucenter">
+    <div class="u-menu">
+        <div class="u-info">
+            您好，哈米<br />账户余额：<b>566</b>元
+            <div class="u-charge">
+                <a href="#" class="fbtn min-red">充值</a>
+                <a href="#" class="fbtn min-white">提现</a>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">资金明细</a></li>
+            <li><a href="#">身份信息</a></li>
+            <li><a href="#">充值</a></li>
+            <li><a href="#">提款</a></li>
+            <li><a href="#" class="cur">修改密码</a></li>
+        </ul>
+    </div>
+    <div class="u-cont">
+        <div class="u-tab cf">
+            <a href="#">修改支付密码</a>
+            <a href="#" class="cur">找回支付密码</a>
+            <a href="#">修改登录密码</a>
+            <a href="#">找回登录密码</a>
+        </div>
+        <div class="pwd-cont">
+            <p class="tips">请您通过以下方式找回您的支付密码：</p>
+        </div>
+        <table class="findpwd-way" id="find_paypwd">
+            <tr>
+                <td width="60" align="right"><i class="pwd-ico"></i></td>
+                <td><b>通过实名认证和绑定的手机号码校验自助找回支付密码</b><br /><span>如果您认证过实名信息，且绑定的手机可用，推荐用这种方法</span></td>
+                <td width="200"><a class="fbtn find_name" href="#">找回密码</a></td>
+            </tr>
+            <tr>
+                <td width="60" align="right"><i class="pwd-ico pwd-2"></i></td>
+                <td><b>通过安全问题和绑定的手机号码校验自助找回支付密码</b><br /><span>如果您还记得安全问题的答案，且绑定的手机可用，推荐用这种方法</span></td>
+                <td width="200"><a class="fbtn find_question" href="#">找回密码</a></td>
+            </tr>
+            <tr>
+                <td width="60" align="right"><i class="pwd-ico pwd-3"></i></td>
+                <td><b>重置安全问题和答案</b><br /><span>重置您的安全问题和答案，以方便您以后在找回密码是使用</span></td>
+                <td width="200"><a class="fbtn reset_answer" href="#">重置安全答案</a></td>
+            </tr>
+            <tr>
+                <td width="60" align="right"><i class="pwd-ico pwd-4"></i></td>
+                <td><b>联系在线客服修改密码</b><br /><span>本方法验证周期较长，建议您优先选择自主找回方式</span></td>
+                <td width="200"><a class="fbtn btn-white" href="#">联系客服</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!--dialog-->
+<div class="dialog" id="find_name">
+    <div class="modal">
+        <div class="modcon">
+            <div class="title"><i title="关闭" class="close dialog-close">&times;</i>找回密码</div>
+            <div class="modpwd">
+                <div class="tips">提醒：您将通过实名信息+手机验证码双重校验重置支付密码。</div>
+                <dl>
+                    <dd>
+                        <p>第一步：实名信息校验</p>
+                        <div class="fipt">
+                            <label class="f-h"><em>*</em> 真实姓名：</label>
+                            <div class="f-n"><input type="text" class="txt bdr name" /><br />
+                            <em class="valid"></em></div>
+                        </div>
+                        <div class="fipt">
+                            <label class="f-h"><em>*</em> 证件类型：</label>
+                            <div class="f-n">
+                            <select class="zj">
+                                <option value="0">请选择</option>
+                                <option>身份证</option>
+                            </select><br />
+                            <em class="valid"></em>
+                            </div>
+                        </div>
+                        <div class="fipt">
+                            <label class="f-h"><em>*</em> 证件号码：</label>
+                            <div class="f-n"><input type="text" class="txt bdr zj_number" /><br />
+                            <em class="valid"></em></div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <p>第二步：绑定手机号验证<span>（15分钟内最多可以获取三次短信验证码，如暂时未收到短信，请稍后再尝试。）</span></p>
+                        <div class="fipt">
+                            <label class="f-h"><em>*</em> 手机号码：</label>
+                            <div class="f-n">
+                                186****8888 <a href="#" class="fbtn min-white send_code">发送验证码</a>
+                                <span class="dia-green f12">发送成功</span>
+                            </div>
+                        </div>
+                        <div class="fipt">
+                            <label class="f-h"><em>*</em> 输入验证码：</label>
+                            <div class="f-n"><input type="text" class="txt bdr val code" value="请填写收到的短信验证码" /> <a href="#" class="bluelink">手机无法收到验证码？</a><br />
+                            <em class="valid"></em></div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <p>第三步：重置支付密码</p>
+                        <div class="fipt">
+                            <label class="f-h">新密码：</label>
+                            <div class="f-n"><input type="password" class="txt bdr pwd1" /><br />
+                            <em class="valid"></em></div>
+                        </div>
+                        <div class="fipt">
+                            <label class="f-h">再输入一遍：</label>
+                            <div class="f-n"><input type="password" class="txt bdr pwd2" /><br />
+                            <em class="valid"></em></div>
+                        </div>
+                    </dd>
+                </dl>
+                <div class="modbtn">
+                    <a class="fbtn long submit" href="#">提交</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="find_question">
+    <div class="modal">
+        <div class="modcon">
+            <div class="title"><i title="关闭" class="close dialog-close">&times;</i>找回密码</div>
+            <div class="modpwd">
+                <div class="tips">提醒：您将通过密码保护问题重置支付密码。</div>
+                <dl>
+                    <dd>
+                        <p>第一步：安全问题验证</p>
+                        <div class="fipt">
+                            <label class="f-h">原问题：</label>
+                            <div class="f-n"><b>您妈妈的名字是什么？</b></div>
+                        </div>
+                        <div class="fipt">
+                            <label class="f-h">答案：</label>
+                            <div class="f-n"><input type="text" class="txt bdr answer" /><br />
+                            <em class="valid"></em></div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <p>第二步：绑定手机号验证<span>（15分钟内最多可以获取三次短信验证码，如暂时未收到短信，请稍后再尝试。）</span></p>
+                        <div class="fipt">
+                            <label class="f-h"><em>*</em> 手机号码：</label>
+                            <div class="f-n">
+                                186****8888 <a href="#" class="fbtn min-white send_code">发送验证码</a>
+                                <span class="dia-green f12">发送成功</span>
+                            </div>
+                        </div>
+                        <div class="fipt">
+                            <label class="f-h"><em>*</em> 输入验证码：</label>
+                            <div class="f-n"><input type="text" class="txt bdr val code" value="请填写收到的短信验证码" /> <a href="#" class="bluelink">手机无法收到验证码？</a><br />
+                            <em class="valid"></em></div>
+                        </div>
+                    </dd>
+                    <dd>
+                        <p>第三步：重置支付密码</p>
+                        <div class="fipt">
+                            <label class="f-h">新密码：</label>
+                            <div class="f-n"><input type="password" class="txt bdr pwd1" /><br />
+                            <em class="valid"></em></div>
+                        </div>
+                        <div class="fipt">
+                            <label class="f-h">再输入一遍：</label>
+                            <div class="f-n"><input type="password" class="txt bdr pwd2" /><br />
+                            <em class="valid"></em></div>
+                        </div>
+                    </dd>
+                </dl>
+                <div class="modbtn">
+                    <a class="fbtn long submit" href="#">提交</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="reset_answer">
+    <div class="modal">
+        <div class="modcon">
+            <div class="title"><i title="关闭" class="close dialog-close">&times;</i>重置安全问题和答案</div>
+            <div class="modpwd">
+                <div class="tips">提醒：您将重置安全问题</div>
+                <dl>
+                    <dd class="req">
+                        <div class="fipt">
+                            <label class="f-h">重置安全答案：</label>
+                            <div class="f-n"><span class="stxt">（重置成功后，以后忘记支付密码可以通过安全答案和绑定手机<a href="#" class="bluelink">自助找回</a>）</span></div>
+                        </div>
+                        <div class="fipt">
+                            <label class="f-h"><em>*</em> 之前的安全问题：</label>
+                            <div class="f-n">
+                                <select class="question">
+                                    <option value="0">请选择安全问题</option>
+                                    <option>您爸爸的名字是什么？</option>
+                                    <option>您妈妈的名字是什么？</option>
+                                    <option>您的出生地是哪里？</option>
+                                    <option>您的生日是哪天？</option>
+                                    <option>您老师的名字是什么？</option>
+                                    <option>您的职业？</option>
+                                </select><br />
+                            <em class="valid"></em>
+                            </div>
+                        </div>
+                        <div class="fipt">
+                            <label class="f-h"><em>*</em> 之前的问题答案：</label>
+                            <div class="f-n"><input type="text" class="txt bdr answer" /><br />
+                            <em class="valid"></em></div>
+                        </div>
+                        <div class="fipt">
+                            <label class="f-h"><em>*</em> 新的安全问题：</label>
+                            <div class="f-n">
+                                <select class="new_question">
+                                    <option value="0">请选择安全问题</option>
+                                    <option>您爸爸的名字是什么？</option>
+                                    <option>您妈妈的名字是什么？</option>
+                                    <option>您的出生地是哪里？</option>
+                                    <option>您的生日是哪天？</option>
+                                    <option>您老师的名字是什么？</option>
+                                    <option>您的职业？</option>
+                                </select><br />
+                            <em class="valid"></em>
+                            </div>
+                        </div>
+                        <div class="fipt">
+                            <label class="f-h"><em>*</em> 新的问题答案：</label>
+                            <div class="f-n"><input type="password" class="txt bdr new_answer" /><br />
+                            <em class="valid"></em></div>
+                        </div>
+                        <div class="fipt">
+                            <label class="f-h"><em>*</em> 请输入支付密码：</label>
+                            <div class="f-n"><input type="password" class="txt bdr pwd" /> <a href="#" class="bluelink">忘记支付密码？</a><br />
+                            <em class="valid"></em></div>
+                        </div>
+                    </dd>
+                </dl>
+                <div class="modbtn">
+                    <a class="fbtn long submit" href="#">重置答案</a>
+                </div>
+                <div class="reqtip">
+                    <p class="modpli"><i></i>
+                        温馨提示：<br />
+                        1.您每天只能充值一次安全问题和答案；<br />
+                        2.请牢记您的安全问题和答案，以方便您以后再找回密码时使用；<br />
+                        3.如有任何问题，欢迎您联系我们的在线客服。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="src/js/base.js" data-main="src/js/main"></script>
+</body>
+</html>

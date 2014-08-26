@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rabbit="http://www.springframework.org/schema/rabbit"
+	xsi:schemaLocation="http://www.springframework.org/schema/rabbit
+           http://www.springframework.org/schema/rabbit/spring-rabbit.xsd
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="amqpService" class="com.sogou.lottery.amqp.AmqpService"
+		init-method="init">
+		<property name="rabbitTemplate" ref="amqpTemplate" />
+	</bean>
+	<!-- 连接服务配置 -->
+	<rabbit:connection-factory id="connectionFactory"
+		addresses="${rabbit.addresses}" username="${rabbit.username}"
+		password="${rabbit.password}" />
+	<!-- rabbit admin -->
+	<rabbit:admin id="rabbitAdmin" connection-factory="connectionFactory" />
+	<!-- converter -->
+	<bean id="messageConverter"
+		class="com.sogou.lottery.amqp.JsonMessageWithRoutingKeyConverter">
+		<!-- <property name="classMapper"> <bean class="org.springframework.amqp.support.converter.DefaultClassMapper" 
+			/> </property> -->
+	</bean>
+	<bean id="genericErrorHandler" class="com.sogou.lottery.amqp.GenericErrorHandler" />
+	<!-- spring template声明 -->
+	<rabbit:template id="amqpTemplate" connection-factory="connectionFactory"
+		message-converter="messageConverter" exchange="excp" />
+
+	<!-- 用户订单需要执行某项操作时 -->
+	<rabbit:queue name="o2split" />
+    <rabbit:queue name="passportinfo"  />
+
+	<rabbit:topic-exchange name="excp">
+		<rabbit:bindings>
+			<rabbit:binding queue="o2split" pattern="order.task.tosplit" />
+            <rabbit:binding queue="passportinfo" pattern="user.cache.sync.passport.info" />
+        </rabbit:bindings>
+	</rabbit:topic-exchange>
+</beans>

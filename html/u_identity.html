@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="src/css/main.css"/>
+</head>
+<body>
+<div class="topbar">
+    <div class="wrapper">
+        <ul class="toplinks">
+            <li><a href="#">首页</a></li> |
+            <li><a href="#">购彩大厅</a></li> |
+            <li><a href="#">意见反馈</a></li> |
+            <li><a href="#">收藏本站</a></li> |
+            <li><a href="#">设为首页</a></li> |
+            <li><a href="#">保存到桌面</a></li>
+        </ul>
+        <div class="top_ulink">
+            欢迎您，<span>guest</span>
+            <a href="#">购彩记录</a>
+            <a href="#">账户明细</a>
+            <a href="#">充值</a>
+            <a href="#">提款</a>
+            <a href="#">修改密码</a>
+            <a href="#">退出登录</a>
+        </div>
+    </div>
+</div>
+<div class="header">
+    <div class="wrapper cf">
+        <a href="#" class="logo ct">搜狗彩票</a>
+        <div class="kefu">
+            <p class="ol-kf"><a href="#"><i></i>在线客服</a></p>
+            <p>客服电话<span>010-8829 8888</span></p>
+        </div>
+    </div>
+</div>
+<div class="menu">
+    <div class="wrapper">
+        <div class="cp-type">
+            <b>选择彩票</b>
+            <ul>
+                <li><a href="#">双色球</a><span>2元能中1000万</span></li>
+                <li class="dlt"><a href="#">大乐透</a><span>3元可中1600万</span></li>
+                <li class="k3"><a href="#">新快3</a><span>骰子游戏好玩易中</span></li>
+                <li class="x5"><a href="#">11选5</a><span>猜中一个号有奖</span></li>
+                <li class="qxc"><a href="#">七星彩</a><span>特别容易中奖</span></li>
+                <li class="qlc"><a href="#">七乐彩</a><span>特别容易中奖</span></li>
+                <li class="sfc"><a href="#">胜平负</a><span>特别容易中奖</span></li>
+                <li class="x9"><a href="#">任选9</a><span>特别容易中奖</span></li>
+            </ul>
+        </div>
+        <ul class="dh">
+            <li><a href="#" class="cur">首页</a></li>
+            <li><a href="#">购彩大厅</a></li>
+            <li><a href="#">开奖公告</a></li>
+            <li><a href="#">购彩工具</a></li>
+            <li><a href="#" class="nobg">帮助中心</a></li>
+        </ul>
+    </div>
+</div>
+<div class="wrapper cf ucenter">
+    <div class="u-menu">
+        <div class="u-info">
+            您好，哈米<br />账户余额：<b>566</b>元
+            <div class="u-charge">
+                <a href="#" class="fbtn min-red">充值</a>
+                <a href="#" class="fbtn min-white">提现</a>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#">我的订单</a></li>
+            <li><a href="#">资金明细</a></li>
+            <li><a href="#" class="cur">身份信息</a></li>
+            <li><a href="#">充值</a></li>
+            <li><a href="#">提款</a></li>
+            <li><a href="#">修改密码</a></li>
+        </ul>
+    </div>
+    <div class="u-cont">
+        <h3><b>我的身份信息</b></h3>
+        <div class="u-idinfo" id="my_info">
+            <div class="fipt">
+                <label class="f-h">用 户 名：</label>
+                <div class="f-n"><b>hami</b></div>
+            </div>
+            <div class="fipt">
+                <label class="f-h">真实姓名：</label>
+                <div class="f-n"><b>哈*</b></div>
+            </div>
+            <div class="fipt">
+                <label class="f-h">身份证号：</label>
+                <div class="f-n"><b>211103198811201916</b></div>
+            </div>
+            <div class="fipt">
+                <label class="f-h">电子邮箱：</label>
+                <div class="f-n"><b>ia*****whoami8@gmail.com</b></div>
+            </div>
+            <div class="fipt">
+                <label class="f-h">联系电话：</label>
+                <div class="f-n"><b class="phone_area">18611554660</b><a href="#" class="change_phone">修改手机号码</a></div>
+            </div>
+            <div class="fipt">
+                <label class="f-h">绑定银行卡卡号：</label>
+                <div class="f-n">
+                    <i class="bank-ico b-xyyh"></i>
+                    <b>6225 **** **** 8888</b>
+                    <a href="#" class="change_card">修改银行卡</a>
+                </div>
+            </div>
+        </div>
+        <div class="btm-tips">
+            <p><i></i>修改绑定时，请先验证已绑定手机号，若当前手机号遗失/不用，或无法收到验证码，<br />请联系客服中心：400-636-1818</p>
+        </div>
+    </div>
+</div>
+<!--  dialog  -->
+<div class="dialog" id="change_phone1">
+    <div class="modal">
+        <div class="modcon">
+            <div class="title"><i title="关闭" class="close dialog-close">&times;</i>修改手机号码</div>
+            <div class="modbox">
+                <p class="mod-tips">修改绑定时，请先验证已绑定手机号，若当前手机号遗失/不用，或无法收到验证码，请联系客服中心：400-636-1818</p>
+                <div class="u-re-tel">
+                    <div class="fipt">
+                        <label class="f-h">您的手机号码：</label>
+                        <div class="f-n">
+                        186****6666 
+                        <a href="#" class="fbtn min-white send_code">
+                            获取验证码
+                        </a>
+                        <span class="dia-green f12">发送成功</span>
+                        </div>
+                    </div>
+                    <div class="fipt">
+                       <label class="f-h">请输入验证码：</label>
+                       <div class="f-n"><input type="text" class="txt code" /><br />
+                       <em class="valid"></em></div>
+                    </div>
+                    <div class="fipt">
+                       <label class="f-h">请输入支付密码：</label>
+                       <div class="f-n"><input type="password" class="txt pwd" /><br />
+                       <em class="valid"></em></div>
+                    </div>
+                </div>
+                <div class="modbtn"><a class="fbtn next" href="#">下一步</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="change_phone2">
+    <div class="modal">
+        <div class="modcon">
+            <div class="title"><i title="关闭" class="close dialog-close">&times;</i>修改手机号码</div>
+            <div class="modbox">
+               <p class="mod-tips">修改绑定时，请先验证已绑定手机号，若当前手机号遗失/不用，或无法收到验证码，请联系客服中心：400-636-1818</p>
+               <div class="u-re-tel">
+                    <div class="fipt">
+                        <label class="f-h">您的手机号码：</label>
+                        <div class="f-n">
+                            <input type="text" class="txt phone" />
+                            <a href="#" class="fbtn min-white send-code">
+                                获取验证码
+                            </a>
+                            <span class="dia-green f12">发送成功</span>
+                            <br>
+                            <em class="valid"></em>
+                        </div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h">请输入验证码：</label>
+                        <div class="f-n">
+                            <input type="text" class="txt code" />
+                            <br>
+                            <em class="valid"></em>
+                        </div>
+                    </div>
+                    <div class="fipt">
+                       <label class="f-h">请输入支付密码：</label>
+                       <div class="f-n">
+                            <input type="password" class="txt pwd" />
+                            <br>
+                            <em class="valid"></em>
+                       </div>
+                    </div>
+                </div>
+               <div class="modbtn"><a class="fbtn submit" href="#">确认修改</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="change_card1">
+    <div class="modal">
+        <div class="modcon">
+            <div class="title"><i title="关闭" class="close dialog-close">&times;</i>添加银行卡</div>
+            <div class="modbox">
+                <p class="ptxt"><b>提款绑定的银行卡开户行必须与您之前注册的实名一致，<br>否则无法提款。请确认信息无误后再提交！</b></p>
+                <div class="dia-bank-ipt">
+                    <div class="fipt">
+                        <label class="f-h">银行开户人姓名：</label>
+                        <div class="f-n"><b>哈*</b></div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h">提款银行：</label>
+                        <div class="f-n">
+                        <select class="bank">
+                            <option value="0">请选择银行</option>
+                            <option value="1">中国工商银行</option>
+                            <option value="2">中国建设银行</option>
+                        </select>
+                        <br>
+                        <em class="valid"></em>
+                        </div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h">银行卡卡号：</label>
+                        <div class="f-n">
+                            <input type="text" class="txt bdr bank_n" />
+                            <span class="dia-red valid"></span>
+                            <br /><span class="dia-gray">仅支持提款身份认证为<b>哈*</b>的银行借记卡</span>
+                            <div class="bankcard-tip">
+                                <span>6225 8888 8888 8888 028</span>
+                                <sup class="ct"></sup>
+                                <sub class="ct"></sub>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reqtip">
+                <b>提款手续费及到账时间</b>
+                <p class="modpli"><i></i>本站目前支持提款至<em>15</em>家银行，每笔提款金额最少为<em>1</em>元。</p>
+                <p class="modpli"><i></i>提款手续费由银行收取，搜狗彩票为您提供补贴，您每笔仅需向银行支付<em>1</em>元钱手续费。</p>
+                <p class="modpli"><i></i>搜狗彩票会第一时间为您办理您的提款申请。</p>
+                <p class="modpli"><i></i>您的提款将在三个工作日左右到账，具体到账时间由银行决定。</p>
+            </div>
+            <div class="modbtn">
+                <a class="fbtn bind" href="#">确认绑定</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dialog" id="change_card2">
+    <div class="modal">
+        <div class="modcon">
+            <div class="title"><i title="关闭" class="close dialog-close">&times;</i>温馨提示</div>
+            <div class="modbox">
+                <p class="ptxt"><b>提款绑定的银行卡开户行必须与您之前注册的实名一致，<br />否则无法提款。请确认信息无误后再提交！</b></p>
+                <div class="dia-bank-ipt">
+                    <div class="fipt">
+                        <label class="f-h">银行开户人姓名：</label>
+                        <div class="f-n"><b>哈米</b></div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h">提款银行：</label>
+                        <div class="f-n"><b class="bank_name"></b></div>
+                    </div>
+                    <div class="fipt">
+                        <label class="f-h">银行卡号：</label>
+                        <div class="f-n"><b class="bank_n"></b></div>
+                    </div>
+                    <div class="modbtn">
+                        <a class="fbtn submit" href="#">确认提交</a>&nbsp;&nbsp;
+                        <a class="fbtn btn-white back" href="#">返回修改</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="src/js/base.js" data-main="src/js/main"></script>
+</body>
+</html>

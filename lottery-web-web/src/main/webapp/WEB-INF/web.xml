@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+	<!-- SPRING CONFIGURATION START -->
+	<!-- Spring 刷新Introspector防止内存泄露 -->
+	<listener>
+		<listener-class>
+			org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+	</listener>
+	<!-- 支持session scope的Spring bean -->
+	<listener>
+		<listener-class>
+			org.springframework.web.context.request.RequestContextListener</listener-class>
+	</listener>
+	<!-- Srping MVC 相关配置 -->
+	<servlet>
+		<servlet-name>LotteryDispatcher</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>
+				classpath*:spring/spring-database.xml
+				classpath*:**/spring-context.xml
+				classpath*:**/spring-mvc.xml
+				classpath*:**/spring-service.xml
+				classpath*:spring/spring-rabbit.xml
+				<!-- classpath*:**/spring-service.xml -->
+			</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LotteryDispatcher</servlet-name>
+		<url-pattern>*.html</url-pattern>
+	</servlet-mapping>
+	<!-- SPRING CONFIGURATION END -->
+
+	<!-- FILTER CONFIGURATION BEGIN -->
+	<!-- 编码UTF8过滤 -->
+	<filter>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- url rewrite -->
+	<filter>
+		<filter-name>UrlRewriteFilter</filter-name>
+		<filter-class>org.tuckey.web.filters.urlrewrite.UrlRewriteFilter</filter-class>
+		<init-param>
+			<param-name>logLevel</param-name>
+			<param-value>INFO</param-value>
+		</init-param>
+		<init-param>
+			<param-name>confPath</param-name>
+			<param-value>
+	            /WEB-INF/urlrewrite.xml
+            </param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>UrlRewriteFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+	<!-- Memcached session接管 -->
+	<filter>
+		<filter-name>MemcachedSessionFilter</filter-name>
+		<filter-class>com.sogou.lottery.web.web.session.MemcachedSessionFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>MemcachedSessionFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- 防止CRLFFilter注入 -->
+	<filter>
+		<filter-name>CrlfFilter</filter-name>
+		<filter-class>com.sogou.lottery.web.web.filter.CRLFFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>CrlfFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- FILTER CONFIGURATION END -->
+</web-app>

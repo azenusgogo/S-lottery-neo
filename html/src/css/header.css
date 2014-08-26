@@ -1,0 +1,353 @@
+.topbar {
+    height: 35px;
+    width: 100%;
+    line-height: 35px;
+    overflow: hidden;
+    border-bottom: 1px solid #ECECEC;
+    background: #F7F7F7
+}
+
+.top_ulink {
+    color: #919192;
+    position: relative;
+    float: left;
+}
+
+.top_ulink .loading {
+    height: 35px;
+    width: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #F7F7F7;
+}
+
+.top_ulink b {
+    color: #D61937;
+    font-size: 14px;
+}
+
+.top_ulink a.nick {
+    color: #0B72A4;
+    margin-left: 0
+}
+
+.top_ulink a.exit {
+    color: #0B72A4;
+}
+
+.top_ulink a {
+    color: #919192;
+    margin-left: 15px;
+}
+
+.top_ulink a.uout {
+    color: #0A73A2;
+    margin: 0;
+}
+
+.top_ulink em {
+    font-family: simsun;
+}
+
+.topbar .toplinks {
+    float: right;
+    color: #626262;
+}
+
+.topbar .toplinks li {
+    display: inline;
+    margin: 0 3px;
+}
+
+.topbar .toplinks li a {
+    color: #626262;
+}
+
+.header {
+    background: #fff;
+    width: 100%;
+}
+
+.header .wrapper {
+    height: 95px;
+    position: relative;
+}
+
+.header .logo {
+    float: left;
+    width: 200px;
+    height: 70px;
+    margin-top: 12px;
+}
+
+.header .topBanner {
+    float: left;
+    width: 220px;
+    height: 66px;
+    overflow: hidden;
+    margin-left: 32px;
+    margin-top: 16px;
+}
+
+.header .kefuwrapper {
+    width: 275px;
+    height: 30px;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+}
+
+.header .kefu {
+    float: right;
+    width: 275px;
+    height: 34px;
+    position: relative;
+    zoom: 1;
+}
+
+.header .kefu p {
+    padding-top: 2px;
+    color: #626262;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    right: 128px;
+}
+
+.header .kefu .ol-kf {
+    width: 105px;
+    height: 32px;
+    border: 1px solid #EFEFEF;
+    background: #F7F7F7;
+    line-height: 18px;
+    border-radius: 3px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header .kefu .ol-kf .chat2serv {
+    position: relative;
+    display: inline-block;
+    height: 32px;
+    width: 105px;
+}
+
+.header .kefu span {
+    display: block;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.header .kefu .refillin {
+    display: inline-block;
+    width: 105px;
+    height: 32px;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.header .kefu a {
+    color: #626262;
+    z-index: 2;
+    display: inline-block;
+    width: 63px;
+    height: 32px;
+    padding-left: 42px;
+    line-height: 32px;
+    zoom: 1;
+}
+
+.header .kefu i {
+    display: inline-block;
+    width: 15px;
+    height: 18px;
+    background-position: 0 -15px;
+    line-height: 18px;
+    position: absolute;
+    top: 8px;
+    left: 14px;
+}
+
+.menu {
+    height: 40px;
+    width: 100%;
+    line-height: 40px;
+    background-position: 0 -120px;
+}
+
+.cp-type {
+    float: left;
+    width: 210px;
+    height: 40px;
+    background-position: 0 -170px;
+    padding-left: 20px;
+    position: relative;
+    z-index: 999;
+}
+
+.cp-type b {
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    background-position: right -445px;
+    background-repeat: no-repeat;
+}
+
+.cp-type ul {
+    height: 431px;
+    *height: 446px;
+    width: 226px;
+    line-height: 47px;
+    background: #fff;
+    border: 2px solid #C11330;
+    overflow: hidden;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    display: none;
+}
+
+.cp-type li {
+    height: 47px;
+    overflow: hidden;
+    border-bottom: 1px dashed #D9D8DD;
+    margin: 0 5px;
+    position: relative;
+}
+
+.cp-type li .row_l {
+    width: 52px;
+    float: left;
+}
+
+.cp-type li .row_r {
+    float: left;
+    background: none;
+    padding-left: 0;
+    font-size: 12px;
+    font-weight: 400
+}
+
+.cp-type li a {
+    font-weight: 700;
+    display: block;
+    font-size: 14px;
+    color: #626262;
+    padding-left: 55px;
+    background-position: 5px 0;
+}
+
+.cp-type li a span {
+    color: #919192;
+    margin-left: 4px;
+    font: 12px/47px simsun;
+}
+
+.cp-type li a.dlt {
+    background-position: 5px -48px
+}
+
+.cp-type li a.k3js, .cp-type li a.k3jl, .cp-type li a.k3gx {
+    background-position: 5px -96px
+}
+
+.cp-type li a.x5 {
+    background-position: 5px -145px
+}
+
+.cp-type li a.qxc {
+    background-position: 5px -192px
+}
+
+.cp-type li a.qlc {
+    background-position: 5px -240px
+}
+
+.cp-type li a.f14 {
+    background-position: 5px -289px
+}
+
+.cp-type li a.f9 {
+    background-position: 5px -336px
+}
+
+.cp-type li a.jczq-i {
+    background-position: 6px -380px
+}
+
+.menu ul.dh {
+    margin-left: 230px;
+    height: 40px;
+}
+
+.menu ul.dh li {
+    float: left;
+}
+
+.cp-type li a .redWordsWraper {
+    position: absolute;
+    top: 17px;
+    *top: 14px;
+    left: 182px;
+    display: inline-block;
+    zoom: 1;
+    height: 18px;
+    width: 34px;
+}
+
+.cp-type li a span.redWords {
+    background-color: #c61534;
+    color: rgb(255, 255, 255);
+    display: block;
+    height: 16px;
+    line-height: 16px;
+    padding: 1px 2px 1px 2px;
+    border-radius: 2px;
+    position: relative;
+    zoom: 1;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.cp-type li a span i.arrowsIcon {
+    display: block;
+    height: 0px;
+    font-size: 0px;
+    line-height: 0;
+    width: 0px;
+    border-style: solid;
+    border-width: 3px 3px 3px 0px;
+    border-color: transparent rgb(183, 23, 15);
+    position: absolute;
+    left: -3px;
+    top: 6px;
+    zoom: 1;
+}
+
+.menu ul.dh li a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    padding: 0 25px;
+    display: block;
+    text-align: center;
+    background-position: right -275px;
+    background-repeat: no-repeat;
+    height: 40px;
+    _width: 60px;
+}
+
+.menu ul.dh li a.nobg {
+    background: none;
+}
+
+.menu ul.dh li a:hover, .menu ul li a.cur {
+    background: #A70520;
+    margin-left: -1px;
+    padding-left: 26px;
+}
